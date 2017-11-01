@@ -1,0 +1,31 @@
+{
+  "name": "crypton-bootstrap4",
+  "version": "1.0.0",
+  "description": "Product page for Crypton app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/cryptonapp/crypton-email-list.git"
+  },
+  "keywords": [
+    "crypton",
+    "crypton",
+    "app",
+    "cryptocurrency",
+    "bitcoin",
+    "ethereum",
+    "litecoin",
+    "spare",
+    "change",
+    "invest"
+  ],
+  "author": "David Samuel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/cryptonapp/crypton-email-list/issues"
+  },
+  "homepage": "https://gitlab.com/cryptonapp/crypton-email-list#README"
+}
