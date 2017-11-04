@@ -36,3 +36,20 @@ body > .container {
 code {
   font-size: 80%;
 }
+
+.bg-crypton-pattern {
+  background: rgb(222, 120, 113);
+  background: -moz-linear-gradient(top left, rgb(124, 67, 117) 25%, #d14d61, rgb(222, 120, 113));
+  background: -webkit-linear-gradient(top left, rgb(124, 67, 117) 25%, #d14d61, rgb(222, 120, 113));
+  background: -ms-linear-gradient(top left, rgb(124, 67, 117) 25%, #d14d61, rgb(222, 120, 113));
+  background: linear-gradient(top left, rgb(124, 67, 117) 25%, #d14d61, rgb(222, 120, 113));
+}
+
+#content {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 40%;
+  padding-bottom: 20%;
+  margin: auto;
+  background: transparent;
+}

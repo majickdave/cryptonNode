@@ -20,72 +20,53 @@
 
     <!-- Custom styles for this template -->
     <link href="sticky-footer-navbar.css" rel="stylesheet">
+
   </head>
 
   <body>
-    <!-- Modal -->
-    <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="emailModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="emailModalLabel">Join Crypton</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Submit</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
+    <!-- Begin gradient pattern -->
+    <div class="bg-crypton-pattern">
     <header>
       <!-- Fixed navbar -->
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #ab90e5;">
-        <a class="navbar-brand" href="#">Crypton</a>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top color-change">
+
+        <a class="navbar-brand" href="#"><span class="align-baseline">
+          <img src="/assets/brand/logo_transparent.png" width="45" height="45" class="d-inline-block align-middle" alt="Crypton">
+          Crypton</span>
+        </a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+          <ul class="nav justify-content-end">
             <li class="nav-item active">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#team">Team<span class="sr-only">(current)</span></a>
+              <div class="container justify-content-end">
+                <button type="button" class="btn btn-light" data-toggle="modal" data-target="#emailModal">
+                  Early Access
+                </button>
+              </div>
             </li>
           </ul>
-          <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#emailModal">
-            Early Access
-          </button>
-          <script>
-          $('#emailModal').on('shown.bs.modal', function () {
-            $('#emailInput').trigger('focus')
-          })
-          </script>
-        </div>
+      </div>
+
       </nav>
     </header>
 
     <!-- Begin page content -->
-    <main role="main" class="container">
+    <main role="main" class="container" id="content">
+      <section class="container-fluid text-center" style="background: transparent; color: white" id="top">
+
       <!-- Main jumbotron for a primary marketing message or call to action -->
-            <div class="jumbotron">
-              <div class="container">
-                <h1 class="display-3">Hello, world!</h1>
-                <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-                <p><button type="button" class="btn btn-light" data-toggle="modal" data-target="#emailModal">Gain Early Access &raquo;</p>
-              </div>
-            </div>
+          <h1 class="d-inline-block">Welcome to Crypton</h1>
+          <p>Investing in cryptocurrency should be simple.
+          Crypton turns your spare change into Bitcoin, Litecoin, and Ethereum automatically.</p>
+          <p><button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#emailModal">Gain Early Access &raquo;</p>
+      </section>
+    </div>
+    <!-- End gradient pattern  -->
 
             <div class="container">
               <!-- Example row of columns -->
@@ -125,5 +106,42 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <!-- navbar schange color change -->
+  <script>
+      $(window).scroll(function() {
+      if ($(document).scrollTop() > 100) {
+        $('.navbar').addClass('color-change');
+      } else {
+        $('.navbar').removeClass('color-change');
+      }
+    });
+  </script>
+
   </body>
+
+  <!-- Modal -->
+  <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="emailModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="emailModalLabel">Join Crypton</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </html>
