@@ -45,6 +45,15 @@ code {
   background: linear-gradient(top left, rgb(124, 67, 117) 25%, #d14d61, rgb(222, 120, 113));
 }
 
+.bg-crypton-nav {
+  background: rgba(124, 67, 117, 1);
+  background: -moz-linear-gradient(top, rgba(124, 67, 117, 0.9),  rgba(124, 67, 117, 0.5));
+  background: -webkit-linear-gradient(top, rgba(124, 67, 117, 0.9),  rgba(124, 67, 117, 0.5));
+  background: -ms-linear-gradient(top, rgba(124, 67, 117, 0.9),  rgba(124, 67, 117, 0.5));
+  background: linear-gradient(top, rgba(124, 67, 117, 0.9),  rgba(124, 67, 117, 0.5));
+
+}
+
 #content {
   padding-top: 250px;
   padding-bottom: 250px;
@@ -60,8 +69,12 @@ code {
 
 #features {
   min-width: 250px;
+
 }
 
+#features.img {
+  padding-top: 50px;
+}
 .crypton-subtitle {
   font-size: 1.5em;
 }
@@ -75,11 +88,29 @@ code {
 
 }
 
-.how-it-works {
-  padding-top: 30px;
-}
-
-
 .feature-text {
   padding: 30px
+}
+
+/*div {
+  padding-bottom: 30px;
+}
+
+img {
+  padding-bottom: 20px;
+}*/
+
+.item .img {
+  float: left;
+  display: block;
+  height: 230px;
+}
+
+.crypton-logo {
+  width:45px;
+  height: 45px;
+}
+
+#portfolio {
+  color: #f5f5f5;
 }

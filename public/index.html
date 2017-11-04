@@ -15,13 +15,16 @@
 
     <title>Crypton - Cryptocurrency, Simplified</title>
 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.0.0-beta.4/dist/css/bootstrap-material-design.min.css"
-    integrity="sha384-R80DC0KVBO4GSTw+wZ5x2zn2pu4POSErBkf8/fSFhPXHxvHJydT0CSgAP2Yo2r4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.0.0-beta.4/dist/css/bootstrap-material-design.min.css" integrity="sha384-R80DC0KVBO4GSTw+wZ5x2zn2pu4POSErBkf8/fSFhPXHxvHJydT0CSgAP2Yo2r4I" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="sticky-footer-navbar.css" rel="stylesheet">
+    <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 
   </head>
@@ -29,7 +32,7 @@
   <!-- Modal -->
   <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="emailModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <div class="modal-content bg-light" style="background-color: purple;">
+      <div class="modal-content bg-light">
         <div class="modal-header">
           <h5 class="modal-title" id="emailModalLabel">Join Crypton</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -56,7 +59,7 @@
     <div class="bg-crypton-pattern">
     <header>
       <!-- Fixed navbar -->
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top color-change" style="opacity: 0.5">
+      <nav class="navbar navbar-expand-lg nav navbar-dark fixed-top bg-crypton-nav" >
 
         <a class="navbar-brand" href="#"><span class="align-baseline">
           <img src="/assets/brand/logo_transparent.png" width="45" height="45" class="d-inline-block align-middle" alt="Crypton">
@@ -71,7 +74,7 @@
           <ul class="nav justify-content-end">
             <li class="nav-item active">
               <div class="container justify-content-end">
-                <button type="button" class="btn btn-outline-light active" data-toggle="modal" data-target="#emailModal" style="background: transparent; color: white">
+                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#emailModal" style="background: transparent; color: white">
                   Early Access
                 </button>
               </div>
@@ -84,36 +87,93 @@
 
     <!-- Begin page content -->
     <main role="main" class="container" id="content">
-      <section class="container text-center" style="background: transparent; color: white;" id="top">
+      <section class="container text-center" style="background: transparent; color: white; padding-bottom: 20px;" id="top">
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
           <h1 class="d-inline-block">Welcome to Crypton</h1>
           <p class="crypton-subtitle">Investing in cryptocurrency should be simple.<p>
-          <button type="button" class="btn btn-lg btn-light active" data-toggle="modal" data-target="#emailModal" style="background: white; color: #853a6a">
-            <p>Gain Early Access</p></button>
+          <button type="button" class="btn btn-md btn-light" data-toggle="modal" data-target="#emailModal" style="background: white; color: #853a6a">
+            Gain Early Access</button>
+            <a class="scroll-link scroll-down" href="#info" title="Scroll Down"><div class="chevron down thin"></div></a>
+          </div>
 
       </section>
-
-    </div>
     <!-- End gradient pattern  -->
-    <h4 class="text-center how-it-works">How Crypton Works</h4>
-    <section class="container" id="features">
 
-                    <hr>
-          <div class="d-flex justify-content-center">
-            <!-- Credit Card -->
-            <div class="row">
-              <div class="col-lg">
-                <img class="align-self-start mr-6" src="assets/images/credit-card.svg" alt="credit card" height="200">
-                <div class="media-body text-left col align-self-end">
-                  <h5 class="mt-0 ">Link a Card</h5>
-                  <p class="mb-0">Easily connect your finances using your debit card.</p>
-              </div>
-            </div>
-          </div>
+    <!-- features section  -->
+    <section id="info" style="background-color: #f5f5f5;">
+		<div class="header text-center">
+      <a href="#info"><i class="material-icons animated infinite bounce" style="font-size: 60px;" onclick="$('#info').animateCss('fadeIn'); $('#features').animateCss('slideInLeft')"
+        >keyboard_arrow_down</i></a>
+			<h2>How Crypton Works</h2>
+		</div>
+    <div class="container text-center" id="features">
+  		<div class="item animated slideInLeft">
+  			<img src="assets/images/credit-card.png" height="300">
+        <h4>Link a Card</h4>
+        <p>Add one or multiple cards to Crypton. Activate, or deactivate at any time.</p>
+  		</div>
+    </div>
+    <br>
+  		<div class="container text-center">
+        <div class="item">
+  			<img src="assets/images/bank.png" height="300">
+  				<h4>Choose an Exchange</h4>
+  				<p>We partner with every major exchange, so you don't have to.</p>
         </div>
-        <!-- End of features container -->
-      </secion>
+  		</div>
+      <div class="container text-center">
+  		<div class="item">
+  			<img src="assets/images/shopping-basket.png" height="300">
+  				<h4>Invest Coins</h4>
+  				<p>Each time you make a purchase, we’ll roundup your charge to the nearest dollar.</p>
+  		</div>
+    </div>
+    <div class="container text-center">
+  		<div class="item">
+  			<img src="assets/images/growth1.png" height="300">
+  				<h4>Watch Your Investment Grow</h4>
+  				<p>You can monitor your investment and watch your savings grow.</p>
+  		</div>
+    </div>
+    <div class="container text-center">
+  		<div class="item">
+  			<img src="assets/images/bitcoin.png" height="300">
+  				<h4>Enjoy Convenience and Security</h4>
+  				<p>We use modern encryption, and only transact with authorized cryptocurrency exchanges.</p>
+  		</div>
+    </div>
+  </div>
+  <!-- End of features container -->
+  </secion>
+
+  <section class="container-fluid bg-crypton-pattern bg-dark">
+
+          <div id="portfolio" class="container-fluid text-center ">
+            <h2>The Team</h2><br>
+
+            <div class="row text-center">
+
+              <div class="col-sm-4">
+                    <img src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAflAAAAJDFhNjY4NDNhLTdmYTctNGQ4Ni04NDEwLWU2MTk5Y2YxNmViYQ.jpg" class="rounded-circle" width="150" height="150">
+                    <p><strong>Blase Biello</strong></p>
+                    <p>co-Founder, CEO</p>
+
+                </div>
+                <div class="col-sm-4">
+                    <img src="assets/images/me-solid.png" alt="David" class="rounded-circle" height="150">
+                    <p><strong>David Samuel</strong></p>
+                    <p>co-Founder, CTO</p>
+
+                </div>
+                <div class="col-sm-4">
+                    <img src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAxjAAAAJGUwZTM0ZmU0LWNiOWEtNDM1Ny1iODA3LTk0ZjFhMzI4M2M1Ng.jpg" class="rounded-circle" alt="Evan" width="150" height="150">
+                    <p><strong>Evan Mair</strong></p>
+                    <p>co-Founder, CFO</p>
+                    </a>
+                </div>
+              </div><br>
+            </section>
 
     </main>
 
@@ -131,7 +191,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
+    <script>
+    $.fn.extend({
+    animateCss: function (animationName) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+        });
+        return this;
+    }
+});
 
+    </script>
   </body>
 
 
