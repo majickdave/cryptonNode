@@ -16,12 +16,39 @@
     <title>Crypton - Cryptocurrency, Simplified</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.0.0-beta.4/dist/css/bootstrap-material-design.min.css"
+    integrity="sha384-R80DC0KVBO4GSTw+wZ5x2zn2pu4POSErBkf8/fSFhPXHxvHJydT0CSgAP2Yo2r4I" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="sticky-footer-navbar.css" rel="stylesheet">
 
+
   </head>
+
+  <!-- Modal -->
+  <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="emailModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content bg-light" style="background-color: purple;">
+        <div class="modal-header">
+          <h5 class="modal-title" id="emailModalLabel">Join Crypton</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-block btn-info">Join</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <body>
 
@@ -29,7 +56,7 @@
     <div class="bg-crypton-pattern">
     <header>
       <!-- Fixed navbar -->
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top color-change">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top color-change" style="opacity: 0.5">
 
         <a class="navbar-brand" href="#"><span class="align-baseline">
           <img src="/assets/brand/logo_transparent.png" width="45" height="45" class="d-inline-block align-middle" alt="Crypton">
@@ -44,7 +71,7 @@
           <ul class="nav justify-content-end">
             <li class="nav-item active">
               <div class="container justify-content-end">
-                <button type="button" class="btn btn-light" data-toggle="modal" data-target="#emailModal">
+                <button type="button" class="btn btn-outline-light active" data-toggle="modal" data-target="#emailModal" style="background: transparent; color: white">
                   Early Access
                 </button>
               </div>
@@ -57,40 +84,37 @@
 
     <!-- Begin page content -->
     <main role="main" class="container" id="content">
-      <section class="container-fluid text-center" style="background: transparent; color: white" id="top">
+      <section class="container text-center" style="background: transparent; color: white;" id="top">
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
           <h1 class="d-inline-block">Welcome to Crypton</h1>
-          <p>Investing in cryptocurrency should be simple.
-          Crypton turns your spare change into Bitcoin, Litecoin, and Ethereum automatically.</p>
-          <p><button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#emailModal">Gain Early Access &raquo;</p>
+          <p class="crypton-subtitle">Investing in cryptocurrency should be simple.<p>
+          <button type="button" class="btn btn-lg btn-light active" data-toggle="modal" data-target="#emailModal" style="background: white; color: #853a6a">
+            <p>Gain Early Access</p></button>
+
       </section>
+
     </div>
     <!-- End gradient pattern  -->
+    <h4 class="text-center how-it-works">How Crypton Works</h4>
+    <section class="container" id="features">
 
-            <div class="container">
-              <!-- Example row of columns -->
-              <div class="row">
-                <div class="col-md-4">
-                  <h2>Heading</h2>
-                  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                  <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                </div>
-                <div class="col-md-4">
-                  <h2>Heading</h2>
-                  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                  <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                </div>
-                <div class="col-md-4">
-                  <h2>Heading</h2>
-                  <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                  <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                </div>
+                    <hr>
+          <div class="d-flex justify-content-center">
+            <!-- Credit Card -->
+            <div class="row">
+              <div class="col-lg">
+                <img class="align-self-start mr-6" src="assets/images/credit-card.svg" alt="credit card" height="200">
+                <div class="media-body text-left col align-self-end">
+                  <h5 class="mt-0 ">Link a Card</h5>
+                  <p class="mb-0">Easily connect your finances using your debit card.</p>
               </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of features container -->
+      </secion>
 
-              <hr>
-
-            </div> <!-- /container -->
     </main>
 
     <footer class="footer">
@@ -107,41 +131,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-    <!-- navbar schange color change -->
-  <script>
-      $(window).scroll(function() {
-      if ($(document).scrollTop() > 100) {
-        $('.navbar').addClass('color-change');
-      } else {
-        $('.navbar').removeClass('color-change');
-      }
-    });
-  </script>
 
   </body>
 
-  <!-- Modal -->
-  <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="emailModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="emailModalLabel">Join Crypton</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Submit</button>
-        </div>
-      </div>
-    </div>
-  </div>
+
 </html>

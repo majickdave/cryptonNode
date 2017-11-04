@@ -46,10 +46,40 @@ code {
 }
 
 #content {
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 40%;
-  padding-bottom: 20%;
+  padding-top: 250px;
+  padding-bottom: 250px;
   margin: auto;
   background: transparent;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#top {
+  font-family: 'Raleway', sans-serif;
+
+}
+
+#features {
+  min-width: 250px;
+}
+
+.crypton-subtitle {
+  font-size: 1.5em;
+}
+
+.crypton-modal {
+  background-color: purple;
+}
+
+.crypton-button :hover {
+  background: transparent;
+
+}
+
+.how-it-works {
+  padding-top: 30px;
+}
+
+
+.feature-text {
+  padding: 30px
 }

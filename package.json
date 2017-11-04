@@ -29,3 +29,16 @@
   },
   "homepage": "https://gitlab.com/cryptonapp/crypton-email-list#README"
 }
+
+{
+  "deploy": "firebse deploy"
+}
+
+{
+  "scripts": {
+    "start": "micro"
+  },
+  "dependencies": {
+    "micro": "latest"
+  }
+}
