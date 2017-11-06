@@ -1,0 +1,6 @@
+export API_KEY="AIzaSyDG2AnvNDb81pot-H0b3OEJt1GJiAOOVH0"
+export AUTH_DOMAIN="crypton-materialkit.firebaseapp.com"
+export DATABASE_URL="https://crypton-materialkit.firebaseio.com"
+export PROJECT_ID="crypton-materialkit",
+export STORAGE_BUCKET="crypton-materialkit.appspot.com",
+export MESSAGING_SENDER_ID="51893553369"
