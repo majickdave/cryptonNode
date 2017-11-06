@@ -30,7 +30,7 @@
   <!-- Modal -->
   <div class="modal fade " id="emailModal" class='emailModal' tabindex="-1" role="dialog" aria-labelledby="emailModalLabel"
       aria-hidden="true" data-keyboard="false" data-backdrop="static">
-      <div class="modal-dialog rounded" role="document">
+      <div class="modal-dialog round" role="document">
         <div class="modal-content" style="background: rgb(124, 67, 117)">
           <div class="modal-header text-light">
             <h5 class="modal-title" id="emailModalLabel">Join Crypton</h5>
@@ -42,15 +42,15 @@
             <form id='emailForm'>
               <div class="form-group">
                 <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
-
+                <small id='result'></small>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
               </div>
-              <button type="button" id='submitEmail' class="btn btn-block btn-lg btn-light">Join</button>
+              <button type="button" id='submitEmail' class="btn btn-block btn-lg btn-outline-light">Join</button>
             </form>
           </div>
-          <div class="modal-footer">
-            <small id='result'></small>
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>
+          <!-- <div class="modal-footer">
+
+          </div> -->
         </div>
       </div>
     </div>
