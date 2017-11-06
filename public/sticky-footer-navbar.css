@@ -24,9 +24,9 @@ body {
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
 
-body > .container {
+/*body > .container {
   padding: 60px 15px 0;
-}
+}*/
 
 .footer > .container {
   padding-right: 15px;
@@ -55,8 +55,8 @@ code {
 }
 
 #content {
-  padding-top: 250px;
-  padding-bottom: 250px;
+  padding-top: 150px;
+  padding-bottom: 50px;
   margin: auto;
   background: transparent;
   font-family: 'Montserrat', sans-serif;
@@ -88,9 +88,9 @@ code {
 
 }
 
-.feature-text {
+/*.feature-text {
   padding: 30px
-}
+}*/
 
 /*div {
   padding-bottom: 30px;
