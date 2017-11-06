@@ -15,11 +15,9 @@
 
     <title>Crypton - Cryptocurrency, Simplified</title>
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.0.0-beta.4/dist/css/bootstrap-material-design.min.css" integrity="sha384-R80DC0KVBO4GSTw+wZ5x2zn2pu4POSErBkf8/fSFhPXHxvHJydT0CSgAP2Yo2r4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="sticky-footer-navbar.css" rel="stylesheet">
@@ -30,28 +28,31 @@
   </head>
 
   <!-- Modal -->
-  <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="emailModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content bg-light">
-        <div class="modal-header">
-          <h5 class="modal-title" id="emailModalLabel">Join Crypton</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-block btn-info">Join</button>
+  <div class="modal fade" id="emailModal" class='emailModal' tabindex="-1" role="dialog" aria-labelledby="emailModalLabel"
+      aria-hidden="true" data-keyboard="false" data-backdrop="static">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="emailModalLabel">Join Crypton</h5>
+            <button type="button" class="close" onclick='hideModal()' aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id='emailForm'>
+              <div class="form-group">
+                <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id='result'></small>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id='submitEmail' class="btn btn-primary">Submit</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
   <body>
 
@@ -59,14 +60,16 @@
     <div class="bg-crypton-pattern">
     <header>
       <!-- Fixed navbar -->
-      <nav class="navbar navbar-expand-lg nav navbar-dark fixed-top bg-crypton-nav" >
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top color-change">
 
-        <a class="navbar-brand" href="#"><span class="align-baseline">
-          <img src="/assets/brand/logo_transparent.png" width="45" height="45" class="d-inline-block align-middle" alt="Crypton">
-          Crypton</span>
+        <a class="navbar-brand" href="#">
+          <span class="align-baseline">
+            <img src="./assets/brand/logo_transparent.png" width="45" height="45" class="d-inline-block align-middle" alt="Crypton"> Crypton
+          </span>
         </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+          aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -74,25 +77,24 @@
           <ul class="nav justify-content-end">
             <li class="nav-item active">
               <div class="container justify-content-end">
-                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#emailModal" style="background: transparent; color: white">
-                  Early Access
-                </button>
+                <button type="button" class="btn btn-lg btn-outline-light" data-toggle="modal" data-target="#emailModal">
+                  Early Access</button>
               </div>
             </li>
           </ul>
-      </div>
+        </div>
 
       </nav>
     </header>
 
     <!-- Begin page content -->
     <main role="main" class="container" id="content">
-      <section class="container text-center" style="background: transparent; color: white; padding-bottom: 20px;" id="top">
+      <section class="container text-left" style="background: transparent; color: white; padding-bottom: 20px;" id="top">
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
-          <h1 class="d-inline-block">Welcome to Crypton</h1>
-          <p class="crypton-subtitle">Investing in cryptocurrency should be simple.<p>
-          <button type="button" class="btn btn-md btn-light" data-toggle="modal" data-target="#emailModal" style="background: white; color: #853a6a">
+          <h1 class="title">Investing in cryptocurrency should be simple.</h1>
+          <p class="sub-title">Crypton turns your spare change into Bitcoin, Litecoin, and Ethereum automatically.<p>
+          <button type="button" class="btn btn-lg btn-outline-light" data-toggle="modal" data-target="#emailModal">
             Gain Early Access</button>
             <a class="scroll-link scroll-down" href="#info" title="Scroll Down"><div class="chevron down thin"></div></a>
           </div>
@@ -103,7 +105,7 @@
     <!-- features section  -->
     <section id="info" style="background-color: #f5f5f5;">
 		<div class="header text-center">
-      <a href="#info"><i class="material-icons animated infinite bounce" style="font-size: 60px;" onclick="$('#info').animateCss('fadeIn'); $('#features').animateCss('slideInLeft')"
+      <a href="#info"><i class="material-icons animated infinite bounce" style="font-size: 60px; color: black" onclick="$('#info').animateCss('fadeIn'); $('#features').animateCss('slideInLeft')"
         >keyboard_arrow_down</i></a>
 			<h2>How Crypton Works</h2>
 		</div>
@@ -190,17 +192,18 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
+    <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
+    <script src="./fire.js"></script>
     <script>
     $.fn.extend({
-    animateCss: function (animationName) {
-        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-        this.addClass('animated ' + animationName).one(animationEnd, function() {
-            $(this).removeClass('animated ' + animationName);
-        });
-        return this;
-    }
-});
+        animateCss: function (animationName) {
+            var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+            this.addClass('animated ' + animationName).one(animationEnd, function() {
+                $(this).removeClass('animated ' + animationName);
+            });
+            return this;
+        }
+    });
 
     </script>
   </body>
