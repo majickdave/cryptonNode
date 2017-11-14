@@ -40,10 +40,48 @@ h6 {
   font-weight: 200;
   letter-spacing: 1px; }
 
-  p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px; }
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px; }
+
+section {
+  padding: 100px 0; }
+  section h2 {
+    font-size: 50px; }
+
+    header.masthead {
+      position: relative;
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 100px;
+      color: white;
+    }
+      header.masthead .header-content {
+        max-width: 500px;
+        margin-bottom: 100px;
+        text-align: center; }
+        header.masthead .header-content h1 {
+          font-size: 30px; }
+      header.masthead .device-container {
+        max-width: 325px;
+        margin-right: auto;
+        margin-left: auto; }
+        header.masthead .device-container .screen img {
+          border-radius: 3px; }
+      @media (min-width: 992px) {
+        header.masthead {
+          height: 100vh;
+          min-height: 775px;
+          padding-top: 0;
+          padding-bottom: 0; }
+          header.masthead .header-content {
+            margin-bottom: 0;
+            text-align: left; }
+            header.masthead .header-content h1 {
+              font-size: 50px; }
+          header.masthead .device-container {
+            max-width: 325px; } }
 
   section {
     padding: 100px 0; }
@@ -83,12 +121,37 @@ h6 {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
 
+      footer {
+  padding: 25px 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #222222; }
+  footer p {
+    font-size: 12px;
+    margin: 0; }
+  footer ul {
+    margin-bottom: 0; }
+    footer ul li a {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.3); }
+      footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li a.active {
+        text-decoration: none; }
+
   #info img {
     max-height: 300px;
     padding-left: 25%;
     padding-right: 25%;
     padding-top: 50px;
     padding-bottom: 20px;
+  }
+
+  #top img {
+    height: auto;
+    margin-bottom: 10%;
+  }
+
+  #features img {
+    padding-bottom: 15px;
   }
 
   .navbar
@@ -101,27 +164,31 @@ h6 {
   }
   .fixed {
     /*background: #54396b;*/
-    background: white;
+    background: rgb(124, 67, 117);
 
   }
 
   .fixed a {
-    color: black;
+    color: white;
   }
 
-  .fixed img {
+  /*.fixed img {
     filter: invert(100%);
   }
 
   .fixed .crypton-btn {
     color: black;
-    border: 1px black;
+    border: 1px solid black;
+  }
+
+  .fixed .crypton-logo {
+    color: black;
   }
 
   .fixed .navbar-toggler-icon {
     filter: invert(100%);
-  }
-  .navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important;}
+  }*/
+  .navbar-nav > li > a {padding-top:8px !important; padding-bottom:8px !important;}
 .navbar {min-height:32px !important}
 
 
@@ -157,13 +224,13 @@ h6 {
       </div>
     </div>
 
-  <body>
+  <body id="top">
 
     <!-- Begin gradient pattern -->
     <div class="container-fluid bg-crypton-pattern">
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top color-change" id="navbar">
-        <a class="navbar-brand btn-simple nav-item active crypton-btn" href="index.html">
+        <a class="navbar-brand crypton-logo" href="index.html">
           <span class="align-baseline">
             <img src="./assets/brand/logo_transparent.png" width="45" height="45" class="d-inline-block align-middle" alt="Crypton"> CRYPTON
           </span>
@@ -211,21 +278,23 @@ h6 {
 
     <!-- Begin page content -->
     <main role="main" id="content">
-      <section id="top" >
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
-      <header class="masthead">
-        <div class="container h-100">
-          <div class="row h-100">
-            <div class="col-lg-7 my-auto">
-              <div class="header-content mx-auto">
+      <header class="masthead d-flex block-inline">
+        <div class="container h-100 my-auto">
+          <div class="row h-100 d-flex align-items-start">
+            <div class="col-md-7">
+              <div class="header-content my-auto mx-auto justify-content-end">
+                <div class="title">
                 <h1 class="mb-5 text-light">Effortlessly acquire digital currencies like Bitcoin, Ethereum, & Litecoin automatically with as little as $5.</h1>
+                <!-- <h2 class="presentation-subtitle"> Crypton turns your spare change into Bitcoin, Litecoin, and Ethereum automatically.</h2> -->
                 <button type="button" class="btn btn-block btn-outline-light" data-toggle="modal" data-target="#emailModal">
                     Early Access</button>
+                </div>
               </div>
             </div>
-            <div class="col-lg-5 my-auto">
-            <img src="assets/images/screenshot_white-iphone7.png" class="img-fluid" width="400px" height="auto" >
+            <div class="col-lg-5 mx-auto align-items-center">
+            <img src="assets/images/screenshot_white-iphone7.png" class="img-fluid" height="auto" >
           </div>
         </div>
       </div>
@@ -235,98 +304,74 @@ h6 {
 
     <!-- features section  -->
     <section class="features" id="features">
-     <div class="container">
-       <div class="section-heading text-center">
-        <h2>How Crypton Works</h2>
-        <hr>
-      </div>
-      <div class="row">
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2>How Crypton Works</h2>
+          <hr>
+        </div>
+        <div class="row">
           <div class="col-lg-4 my-auto">
+            <div class="device-container">
+              <div class="device-mockup iphone6_plus portrait white">
                 <div class="device">
                   <div class="screen">
                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                    <img src="assets/images/" class="img-fluid" alt="">
+                    <img src="assets/images/iphone_black.jpg" class="img-fluid" alt="">
                   </div>
-                  <div class="button">
-                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 my-auto">
+            <div class="container-fluid text-md-left">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="feature-item ">
+                    <img src="assets/images/credit-card.png" class="img" width="150px" height="auto" margin="auto">
+                    <h3>Link Debit Card</h3>
+                    <p class="text-muted">Add one or multiple cards to Crypton. Activate, or deactivate at any time.</p>
                   </div>
-            </div>
-          </div>
-
-      <!-- Start features -->
-      <div class="wrapper">
-      <div class="container" style="padding: 50px">
-        <div class="row">
-          <div class="col-md-6 mb-3">
-      			<img src="assets/images/credit-card.png" class="img-fluid" max-width="100%" margin="auto">
-            <div class="text-center">
-              <h4>Link A Debit Card</h4>
-              <p class="text-muted">Add one or multiple cards to Crypton. Activate, or deactivate at any time.</p>
-            </div>
-        	</div>
-          <!-- <div class="col-lg">
-            <img src="assets/images/bank.png" class="img-fluid" max-width="75%" height="auto">
-            <div class="text-center">
-              <h4>Choose Any Exchange</h4>
-              <p class="text-muted">We partner with every major exchange, so you don't have to.</p>
-            </div>
-          </div> -->
-          <div class="col-md-6 mb-3">
-            <img src="assets/images/shopping-basket.png" class="img-fluid" max-width="100%" height="auto" margin="auto">
-            <div class="text-center">
-            <h4>Activate Recurring Deposits</h4>
-            <p class="text-muted">Each time you make a purchase, we’ll roundup your charge to the nearest dollar.</p>
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <div class="container" style="padding: 50px">
-        <div class="row">
-          <div class="col-md-6 mb-3 align-self-start">
-            <img src="assets/images/coins.png" class="img-fluid" max-width="100%" height="auto" margin="auto">
-          </div>
-          <div class="col-md-6 mb-3 align-self-center">
-            <div class="text-center text-lg-left">
-              <h4>Invest Spare Change</h4>
-              <p class="text-muted">Choose the amount you would like to invest into Bitcoin, Ethereum, and Litecoin.</p>
+                </div>
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <img src="assets/images/shopping-basket.png" class="img" width="150px" height="auto" margin="auto">
+                    <h3>Recurring Deposits</h3>
+                    <p class="text-muted">Each time you make a purchase, we’ll roundup your charge to the nearest dollar.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <img src="assets/images/coins.png" class="img" width="150px" height="auto" margin="auto">
+                    <h3>Invest Spare Change</h3>
+                    <p class="text-muted">Choose the amount you would like to invest into Bitcoin, Ethereum, and Litecoin.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <img src="assets/images/bitcoin.png" class="img" width="150px" height="auto" margin="auto">
+                    <h3>Invest Confidently</h3>
+                    <p class="text-muted">We use modern encryption, and only transact with authorized cryptocurrency exchanges.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-<div class="container" style="padding: 50px">
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <img src="assets/images/growth1.png" class="img-fluid" max-width="100%" height="auto" margin="auto">
-            <div class="text-center">
-              <h4>Watch Your Investment Grow</h4>
-              <p class="text-muted">You can monitor your investment and watch your savings grow.</p>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <img src="assets/images/bitcoin.png" class="img-fluid" max-width="100%" height="auto" margin="auto">
-            <div class="text-center">
-              <h4>Invest Confidently</h4>
-              <p class="text-muted">We use modern encryption, and only transact with authorized cryptocurrency exchanges.</p>
-            </div>
-          </div>
-        </div>
-
-  <!-- End of features container -->
-  </div>
-</section>
-
-<br>
   <section class="bg-dark text-light" id="portfolio">
-    <div class="container" style="padding: 50px">
-
-            <h2 class="display-3 text-center">The Team</h2><br>
-
+    <div class="container text-center">
+          <div class="title">
+            <h2>The Team</h2><br>
+          </div>
             <div class="row">
               <div class="card-deck text-dark">
                 <div class="card">
-                  <img class="card-img-top" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAflAAAAJDFhNjY4NDNhLTdmYTctNGQ4Ni04NDEwLWU2MTk5Y2YxNmViYQ.jpg"
+                  <img class="card-img-top image-fit" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAflAAAAJDFhNjY4NDNhLTdmYTctNGQ4Ni04NDEwLWU2MTk5Y2YxNmViYQ.jpg"
                   alt="blase bielo">
                   <div class="card-body">
                     <h4 class="card-title">Blase Biello</h4>
@@ -360,16 +405,19 @@ h6 {
                 </div>
               </div>
             </div>
+          </div>
 
-            </section>
+      </section>
 
-    </main>
 
-    <footer class="footer">
+    <footer>
       <div class="container">
-        <span class="text-muted">&copy; 2017 - Crypton Holdings, LLC.</span>
+        <p>&copy; 2017 - Crypton Holdings, LLC.</p>
       </div>
     </footer>
+
+      </main>
+
 
 
     <!-- Bootstrap core JavaScript
