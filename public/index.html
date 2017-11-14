@@ -17,16 +17,71 @@
     <title>Crypton - Cryptocurrency, Simplified</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="sticky-footer-navbar.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
 
 <style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  letter-spacing: 1px; }
+
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px; }
+
+  section {
+    padding: 100px 0; }
+    section h2 {
+      font-size: 50px; }
+
+  section.features .section-heading {
+    margin-bottom: 100px; }
+    section.features .section-heading h2 {
+      margin-top: 0; }
+    section.features .section-heading p {
+      margin-bottom: 0; }
+
+  section.features .device-container,
+  section.features .feature-item {
+    max-width: 325px;
+    margin: 0 auto; }
+
+  section.features .device-container {
+    margin-bottom: 100px; }
+    @media (min-width: 992px) {
+      section.features .device-container {
+        margin-bottom: 0; } }
+
+  section.features .feature-item {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center; }
+    section.features .feature-item h3 {
+      font-size: 30px; }
+    section.features .feature-item i {
+      font-size: 80px;
+      display: block;
+      margin-bottom: 15px;
+      background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
+      background: linear-gradient(to left, #7b4397, #dc2430);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
 
   #info img {
     max-height: 300px;
@@ -44,11 +99,30 @@
       transition: 500ms; //change time accordingly
 
   }
-  .fixed{
-    background: #54396b;
+  .fixed {
+    /*background: #54396b;*/
+    background: white;
 
-}
+  }
 
+  .fixed a {
+    color: black;
+  }
+
+  .fixed img {
+    filter: invert(100%);
+  }
+
+  .fixed .crypton-btn {
+    color: black;
+    border: 1px black;
+  }
+
+  .fixed .navbar-toggler-icon {
+    filter: invert(100%);
+  }
+  .navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important;}
+.navbar {min-height:32px !important}
 
 
 </style>
@@ -87,35 +161,34 @@
 
     <!-- Begin gradient pattern -->
     <div class="container-fluid bg-crypton-pattern">
-    <header>
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top color-change" id="navbar">
-        <a class="navbar-brand btn-simple nav-item active" href="index.html">
+        <a class="navbar-brand btn-simple nav-item active crypton-btn" href="index.html">
           <span class="align-baseline">
             <img src="./assets/brand/logo_transparent.png" width="45" height="45" class="d-inline-block align-middle" alt="Crypton"> CRYPTON
           </span>
         </a>
 
-
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          aria-expanded="true" aria-label="Toggle navigation" style="border: 0px; color: white">
+          <span class="navbar-toggler-icon custom-toggler" ></span>
         </button>
 
+
         <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse" >
-            <ul class="nav justify-content-start">
+            <ul class="nav justify-content-end">
               <li class="nav-item active">
-                <div class='container justify-content-end'>
+                <div class='container'>
                   <a rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/getcrypton" target="_blank"
-                    rel="noopener noreferrer" class="btn btn-outline-light btn-round btn-just-icon">
+                    rel="noopener noreferrer" class="btn btn-outline-light btn-simple btn-just-icon" style="border: 0px">
                     <i class="fa fa-twitter"></i>
                   </a>
                 </div>
               </li>
               <li class="nav-item active">
-                <div class='container justify-content-end'>
+                <div class='container'>
                   <a rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/getcrypton" target="_blank"
-                    rel="noopener noreferrer" class="btn btn-outline-light btn-simple btn-just-icon">
+                    rel="noopener noreferrer" class="btn btn-outline-light btn-simple btn-just-icon" style="border: 0px">
                     <i class="fa fa-facebook-square"></i>
                   </a>
                 </div>
@@ -123,59 +196,56 @@
               <li class="nav-item active">
                 <div class='container'>
                   <a rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/getcrypton" target="_blank"
-                    rel="noopener noreferrer" class="btn btn-outline-light btn-simple btn-just-icon">
+                    rel="noopener noreferrer" class="btn btn-outline-light btn-simple btn-just-icon" style="border: 0px">
                     <i class="fa fa-instagram"></i>
                   </a>
                 </div>
               </li>
               <li class="nav-item active">
-
-                  <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#emailModal">
+                  <button type="button" class="btn btn-outline-light crypton-btn" data-toggle="modal" data-target="#emailModal" >
                     Early Access</button>
               </li>
           </ul>
         </div>
       </nav>
-    </header>
 
     <!-- Begin page content -->
-    <main role="main" class="container" id="content">
-      <section class="container" id="top">
+    <main role="main" id="content">
+      <section id="top" >
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="header container-fluid">
-        <div class="row">
-          <div class="col-md align-self-center text-light">
-            <h1 class="title">Investing in cryptocurrency should be simple.</h1>
-            <p class="sub-title">Crypton turns your spare change into Bitcoin, Litecoin, and Ethereum automatically.<p>
-              <button type="button" class="btn btn-lg btn-outline-light" data-toggle="modal" data-target="#emailModal">
-                Gain Early Access</button>
-          </div>
-
-          <div class="col-lg align-self-center">
-            <img src="assets/images/screenshot_white-iphone7.png" class="img-fluid" max-width="100%" height="auto" >
+      <header class="masthead">
+        <div class="container h-100">
+          <div class="row h-100">
+            <div class="col-lg-7 my-auto">
+              <div class="header-content mx-auto">
+                <h1 class="mb-5 text-light">Effortlessly acquire digital currencies like Bitcoin, Ethereum, & Litecoin automatically with as little as $5.</h1>
+                <button type="button" class="btn btn-block btn-outline-light" data-toggle="modal" data-target="#emailModal">
+                    Early Access</button>
+              </div>
+            </div>
+            <div class="col-lg-5 my-auto">
+            <img src="assets/images/screenshot_white-iphone7.png" class="img-fluid" width="400px" height="auto" >
           </div>
         </div>
-
-
-          </div>
-          <a class="scroll-link scroll-down" href="#info" title="Scroll Down"><div class="chevron down"></div></a>
-      </section>
+      </div>
+    </header>
     <!-- End gradient pattern  -->
+    </div>
 
     <!-- features section  -->
-    <section id="info" class="card bg-light text-dark" style="padding: 20px">
-      <div class="header text-center">
-        <a href="#info"><i class="material-icons animated infinite bounce" style="font-size: 5em; color: purple" onclick="$('#info').animateCss('fadeIn'); $('#features').animateCss('slideInLeft')"
-          >keyboard_arrow_down</i></a>
-        <h2 class="display-4">How Crypton Works</h2>
+    <section class="features" id="features">
+     <div class="container">
+       <div class="section-heading text-center">
+        <h2>How Crypton Works</h2>
         <hr>
       </div>
       <br>
       <!-- Start features -->
+      <div class="wrapper">
       <div class="container" style="padding: 50px">
         <div class="row">
-          <div class="col-lg">
+          <div class="col-md-6 mb-3">
       			<img src="assets/images/credit-card.png" class="img-fluid" max-width="100%" margin="auto">
             <div class="text-center">
               <h4>Link A Debit Card</h4>
@@ -189,7 +259,7 @@
               <p class="text-muted">We partner with every major exchange, so you don't have to.</p>
             </div>
           </div> -->
-          <div class="col-lg">
+          <div class="col-md-6 mb-3">
             <img src="assets/images/shopping-basket.png" class="img-fluid" max-width="100%" height="auto" margin="auto">
             <div class="text-center">
             <h4>Activate Recurring Deposits</h4>
@@ -199,12 +269,12 @@
     </div>
   </div>
 
-  <div class="container-fluid" style="margin-top: auto">
+  <div class="container" style="padding: 50px">
         <div class="row">
-          <div class="col-md align-self-start">
-            <img src="assets/images/coins.png" class="img-fluid" width="100%" height="auto" margin="auto">
+          <div class="col-md-6 mb-3 align-self-start">
+            <img src="assets/images/coins.png" class="img-fluid" max-width="100%" height="auto" margin="auto">
           </div>
-          <div class="col-lg align-self-center">
+          <div class="col-md-6 mb-3 align-self-center">
             <div class="text-center text-lg-left">
               <h4>Invest Spare Change</h4>
               <p class="text-muted">Choose the amount you would like to invest into Bitcoin, Ethereum, and Litecoin.</p>
@@ -213,16 +283,16 @@
         </div>
       </div>
 
-<div class="container-fluid">
+<div class="container" style="padding: 50px">
         <div class="row">
-          <div class="col-md">
+          <div class="col-md-6 mb-3">
             <img src="assets/images/growth1.png" class="img-fluid" max-width="100%" height="auto" margin="auto">
             <div class="text-center">
               <h4>Watch Your Investment Grow</h4>
               <p class="text-muted">You can monitor your investment and watch your savings grow.</p>
             </div>
           </div>
-          <div class="col-md">
+          <div class="col-md-6 mb-3">
             <img src="assets/images/bitcoin.png" class="img-fluid" max-width="100%" height="auto" margin="auto">
             <div class="text-center">
               <h4>Invest Confidently</h4>
@@ -236,9 +306,10 @@
 </section>
 
 <br>
-  <section class="card bg-dark text-light" style="padding: 50px" id="portfolio">
+  <section class="bg-dark text-light" id="portfolio">
+    <div class="container" style="padding: 50px">
 
-            <h2 class="display-3">The Team</h2><br>
+            <h2 class="display-3 text-center">The Team</h2><br>
 
             <div class="row">
               <div class="card-deck text-dark">
@@ -276,12 +347,13 @@
                   </div>
                 </div>
               </div>
+            </div>
 
             </section>
-            </div>
+
     </main>
 
-    <footer class="mdl-footer">
+    <footer class="footer">
       <div class="container">
         <span class="text-muted">&copy; 2017 - Crypton Holdings, LLC.</span>
       </div>
