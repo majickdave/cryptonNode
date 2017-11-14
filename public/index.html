@@ -20,11 +20,35 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
     <link href="sticky-footer-navbar.css" rel="stylesheet">
-    <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
 
+<style>
+
+  #info img {
+    max-height: 300px;
+  }
+
+  .navbar
+  {
+      min-height:100px;
+      max-width:100%;
+      background: transparent;
+      transition: 500ms; //change time accordingly
+
+  }
+  .fixed{
+    background: #54396b;
+
+}
+
+
+
+</style>
 
   </head>
 
@@ -34,7 +58,7 @@
       <div class="modal-dialog round" role="document">
         <div class="modal-content" style="background: rgb(124, 67, 117)">
           <div class="modal-header text-light">
-            <h5 class="modal-title" id="emailModalLabel">Join Crypton</h5>
+            <h5 class="modal-title text-center" id="emailModalLabel">Join Crypton</h5>
             <button type="button" class="close text-light" onclick='hideModal()' aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -59,129 +83,202 @@
   <body>
 
     <!-- Begin gradient pattern -->
-    <div class="bg-crypton-pattern">
+    <div class="container-fluid bg-crypton-pattern">
     <header>
       <!-- Fixed navbar -->
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top color-change">
-
-        <a class="navbar-brand" href="#">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top color-change" id="navbar">
+        <a class="navbar-brand btn-simple nav-item active" href="index.html">
           <span class="align-baseline">
-            <img src="./assets/brand/logo_transparent.png" width="45" height="45" class="d-inline-block align-middle" alt="Crypton"> Crypton
+            <img src="./assets/brand/logo_transparent.png" width="45" height="45" class="d-inline-block align-middle" alt="Crypton"> CRYPTON
           </span>
         </a>
+
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
           aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-          <ul class="nav justify-content-end">
-            <li class="nav-item active">
-              <div class="container justify-content-end">
-                <button type="button" class="btn btn-lg btn-outline-light" data-toggle="modal" data-target="#emailModal">
-                  Early Access</button>
-              </div>
-            </li>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse" >
+            <ul class="nav justify-content-start">
+              <li class="nav-item active">
+                <div class='container justify-content-end'>
+                  <a rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/getcrypton" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-outline-light btn-round btn-just-icon">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item active">
+                <div class='container justify-content-end'>
+                  <a rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/getcrypton" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-outline-light btn-simple btn-just-icon">
+                    <i class="fa fa-facebook-square"></i>
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item active">
+                <div class='container'>
+                  <a rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/getcrypton" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-outline-light btn-simple btn-just-icon">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item active">
+
+                  <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#emailModal">
+                    Early Access</button>
+              </li>
           </ul>
         </div>
-
       </nav>
     </header>
 
     <!-- Begin page content -->
     <main role="main" class="container" id="content">
-      <section class="container text-left text-light" style="background: transparent;" id="top">
+      <section class="container" id="top">
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
-          <h1 class="title">Investing in cryptocurrency should be simple.</h1>
-          <p class="sub-title">Crypton turns your spare change into Bitcoin, Litecoin, and Ethereum automatically.<p>
-          <button type="button" class="btn btn-block btn-lg btn-outline-light" data-toggle="modal" data-target="#emailModal" >
-            Gain Early Access</button>
-            <a class="scroll-link scroll-down" href="#info" title="Scroll Down"><div class="chevron down"></div></a>
+      <div class="header container-fluid">
+        <div class="row">
+          <div class="col-md align-self-center text-light">
+            <h1 class="title">Investing in cryptocurrency should be simple.</h1>
+            <p class="sub-title">Crypton turns your spare change into Bitcoin, Litecoin, and Ethereum automatically.<p>
+              <button type="button" class="btn btn-lg btn-outline-light" data-toggle="modal" data-target="#emailModal">
+                Gain Early Access</button>
           </div>
 
+          <div class="col-lg align-self-center">
+            <img src="assets/images/screenshot_white-iphone7.png" class="img-fluid" max-width="100%" height="auto" >
+          </div>
+        </div>
+
+
+          </div>
+          <a class="scroll-link scroll-down" href="#info" title="Scroll Down"><div class="chevron down"></div></a>
       </section>
     <!-- End gradient pattern  -->
 
     <!-- features section  -->
-    <section id="info" class="bg-light text-dark">
-		<div class="header text-center">
-      <a href="#info"><i class="material-icons animated infinite bounce" style="font-size: 3em; color: purple" onclick="$('#info').animateCss('fadeIn'); $('#features').animateCss('slideInLeft')"
-        >keyboard_arrow_down</i></a>
-			<h2>How Crypton Works</h2>
-		</div>
-    <div class="container text-center" id="features">
-  		<div class="item animated slideInLeft">
-  			<img src="assets/images/credit-card.png" height="300">
-        <h4>Link a Card</h4>
-        <p>Add one or multiple cards to Crypton. Activate, or deactivate at any time.</p>
-  		</div>
-    </div>
-    <br>
-  		<div class="container text-center">
-        <div class="item">
-  			<img src="assets/images/bank.png" height="300">
-  				<h4>Choose an Exchange</h4>
-  				<p>We partner with every major exchange, so you don't have to.</p>
+    <section id="info" class="card bg-light text-dark" style="padding: 20px">
+      <div class="header text-center">
+        <a href="#info"><i class="material-icons animated infinite bounce" style="font-size: 5em; color: purple" onclick="$('#info').animateCss('fadeIn'); $('#features').animateCss('slideInLeft')"
+          >keyboard_arrow_down</i></a>
+        <h2 class="display-4">How Crypton Works</h2>
+        <hr>
+      </div>
+      <br>
+      <!-- Start features -->
+      <div class="container" style="padding: 50px">
+        <div class="row">
+          <div class="col-lg">
+      			<img src="assets/images/credit-card.png" class="img-fluid" max-width="100%" margin="auto">
+            <div class="text-center">
+              <h4>Link A Debit Card</h4>
+              <p class="text-muted">Add one or multiple cards to Crypton. Activate, or deactivate at any time.</p>
+            </div>
+        	</div>
+          <!-- <div class="col-lg">
+            <img src="assets/images/bank.png" class="img-fluid" max-width="75%" height="auto">
+            <div class="text-center">
+              <h4>Choose Any Exchange</h4>
+              <p class="text-muted">We partner with every major exchange, so you don't have to.</p>
+            </div>
+          </div> -->
+          <div class="col-lg">
+            <img src="assets/images/shopping-basket.png" class="img-fluid" max-width="100%" height="auto" margin="auto">
+            <div class="text-center">
+            <h4>Activate Recurring Deposits</h4>
+            <p class="text-muted">Each time you make a purchase, we’ll roundup your charge to the nearest dollar.</p>
+          </div>
         </div>
-  		</div>
-      <div class="container text-center">
-  		<div class="item">
-  			<img src="assets/images/shopping-basket.png" height="300">
-  				<h4>Invest Coins</h4>
-  				<p>Each time you make a purchase, we’ll roundup your charge to the nearest dollar.</p>
-  		</div>
-    </div>
-    <div class="container text-center">
-  		<div class="item">
-  			<img src="assets/images/growth1.png" height="300">
-  				<h4>Watch Your Investment Grow</h4>
-  				<p>You can monitor your investment and watch your savings grow.</p>
-  		</div>
-    </div>
-    <div class="container text-center">
-  		<div class="item">
-  			<img src="assets/images/bitcoin.png" height="300">
-  				<h4>Enjoy Convenience and Security</h4>
-  				<p>We use modern encryption, and only transact with authorized cryptocurrency exchanges.</p>
-  		</div>
     </div>
   </div>
+
+  <div class="container-fluid" style="margin-top: auto">
+        <div class="row">
+          <div class="col-md align-self-start">
+            <img src="assets/images/coins.png" class="img-fluid" width="100%" height="auto" margin="auto">
+          </div>
+          <div class="col-lg align-self-center">
+            <div class="text-center text-lg-left">
+              <h4>Invest Spare Change</h4>
+              <p class="text-muted">Choose the amount you would like to invest into Bitcoin, Ethereum, and Litecoin.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<div class="container-fluid">
+        <div class="row">
+          <div class="col-md">
+            <img src="assets/images/growth1.png" class="img-fluid" max-width="100%" height="auto" margin="auto">
+            <div class="text-center">
+              <h4>Watch Your Investment Grow</h4>
+              <p class="text-muted">You can monitor your investment and watch your savings grow.</p>
+            </div>
+          </div>
+          <div class="col-md">
+            <img src="assets/images/bitcoin.png" class="img-fluid" max-width="100%" height="auto" margin="auto">
+            <div class="text-center">
+              <h4>Invest Confidently</h4>
+              <p class="text-muted">We use modern encryption, and only transact with authorized cryptocurrency exchanges.</p>
+            </div>
+          </div>
+        </div>
+
   <!-- End of features container -->
-  </secion>
+  </div>
+</section>
 
-  <section class="container-fluid bg-crypton-pattern bg-dark text-light">
+<br>
+  <section class="card bg-dark text-light" style="padding: 50px" id="portfolio">
 
-          <div id="portfolio" class="container-fluid text-center">
-            <h2>The Team</h2><br>
+            <h2 class="display-3">The Team</h2><br>
 
-            <div class="row text-center">
-
-              <div class="col-sm-4">
-                    <img src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAflAAAAJDFhNjY4NDNhLTdmYTctNGQ4Ni04NDEwLWU2MTk5Y2YxNmViYQ.jpg" class="rounded-circle" width="150" height="150">
-                    <p><strong>Blase Biello</strong></p>
-                    <p>co-Founder, CEO</p>
-
+            <div class="row">
+              <div class="card-deck text-dark">
+                <div class="card">
+                  <img class="card-img-top" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAflAAAAJDFhNjY4NDNhLTdmYTctNGQ4Ni04NDEwLWU2MTk5Y2YxNmViYQ.jpg"
+                  alt="blase bielo">
+                  <div class="card-body">
+                    <h4 class="card-title">Blase Biello</h4>
+                    <p class="card-text">co-Founder, CEO</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">USC Alumnus</small>
+                  </div>
                 </div>
-                <div class="col-sm-4">
-                    <img src="assets/images/me-solid.png" alt="David" class="rounded-circle" height="150">
-                    <p><strong>David Samuel</strong></p>
-                    <p>co-Founder, CTO</p>
 
+                <div class="card">
+                  <img class="card-img-top" src="assets/images/me-solid.png" alt="david samuel">
+                  <div class="card-body">
+                    <h4 class="card-title">David Samuel</h4>
+                    <p class="card-text">co-Founder, CTO</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">M.S. Data Science, SMU</small>
+                  </div>
                 </div>
-                <div class="col-sm-4">
-                    <img src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAxjAAAAJGUwZTM0ZmU0LWNiOWEtNDM1Ny1iODA3LTk0ZjFhMzI4M2M1Ng.jpg" class="rounded-circle" alt="Evan" width="150" height="150">
-                    <p><strong>Evan Mair</strong></p>
-                    <p>co-Founder, CFO</p>
-                    </a>
+                <div class="card">
+                  <img class="card-img-top" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAxjAAAAJGUwZTM0ZmU0LWNiOWEtNDM1Ny1iODA3LTk0ZjFhMzI4M2M1Ng.jpg"
+                  alt="evan mair">
+                  <div class="card-body">
+                    <h4 class="card-title">Evan Mair</h4>
+                    <p class="card-text">co-Founder, CFO</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">USC Alumnus</small>
+                  </div>
                 </div>
-              </div><br>
+              </div>
+
             </section>
-
+            </div>
     </main>
 
-    <footer class="footer">
+    <footer class="mdl-footer">
       <div class="container">
         <span class="text-muted">&copy; 2017 - Crypton Holdings, LLC.</span>
       </div>
@@ -206,6 +303,20 @@
             return this;
         }
     });
+
+    </script>
+    <script>
+    $(window).scroll(function(){
+      if($(window).scrollTop() > 50)
+      {
+        $('.navbar').addClass('fixed');
+      }
+      else
+      {
+        $('.navbar').removeClass('fixed');
+      }
+    });
+
 
     </script>
   </body>
