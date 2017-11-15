@@ -4,7 +4,12 @@
   "description": "Product page for Crypton app",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "deploy": "firebse deploy",
+    "start": "micro"
+  },
+  "dependencies": {
+    "micro": "latest"
   },
   "repository": {
     "type": "git",
@@ -28,17 +33,4 @@
     "url": "https://gitlab.com/cryptonapp/crypton-email-list/issues"
   },
   "homepage": "https://gitlab.com/cryptonapp/crypton-email-list#README"
-}
-
-{
-  "deploy": "firebse deploy"
-}
-
-{
-  "scripts": {
-    "start": "micro"
-  },
-  "dependencies": {
-    "micro": "latest"
-  }
 }
