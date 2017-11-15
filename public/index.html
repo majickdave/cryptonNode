@@ -19,8 +19,10 @@
 
   <!-- Bootstrap core CSS -->
 
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700" />
+  <!-- <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
+  
+  <!-- <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
@@ -39,8 +41,44 @@
     h5,
     h6 {
       -webkit-font-smoothing: antialiased;
-      font-family: "Montserrat", "Helvetica", "Arial", "sans-serif";
+      font-family: "Roboto", "Helvetica", "Arial", "sans-serif";
       font-weight: 300;
+      line-height: 1.1;
+      padding-bottom: 5px;
+    }
+    .title h2 {
+      font-size: 1.3em;
+    }
+    .title h1 {
+      margin-right: 40px;
+    }
+    .title {
+      margin-top: 200px;
+    }
+    span.header-title {
+      font-weight: 300;
+    }
+    /* div.container {
+      margin-left: 0px;
+      margin-right: 0px;
+    } */
+    /* nav.navbar {
+      padding-left: 90px;
+      padding-right: 90px;
+    } */
+    .nav-item .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    i.fa {
+      font-size: 20px;
+    }
+    button.btn{
+     cursor: pointer;
+     text-transform: capitalize;
+     font-weight: 300;
+     font-size: 12px;
+     padding: 12px 30px 12px 30px;
     }
 
     p {
@@ -108,9 +146,6 @@
       padding: 100px 0;
     }
 
-    section h2 {
-      font-size: 50px;
-    }
 
     section.features .section-heading {
       margin-bottom: 100px;
@@ -157,6 +192,7 @@
       background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
       background: linear-gradient(to left, #7b4397, #dc2430);
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
@@ -209,20 +245,15 @@
       min-height: 100px;
       max-width: 100%;
       background: transparent;
-      transition: 500ms; //change time accordingly
+      transition: 500ms;
     }
 
-<<<<<<< HEAD
+    
+
     .fixed {
-      /*background: #54396b;*/
+      /* background: #54396b; */
       background: rgb(124, 67, 117);
-=======
-  }
-  .fixed {
-    /*background: #54396b;*/
-    /*background: rgb(124, 67, 117);*/
-    background: white;
->>>>>>> refs/remotes/origin/master
+      /* background: white; */
 
     }
 
@@ -230,33 +261,32 @@
       color: white;
     }
 
-<<<<<<< HEAD
-    /*.fixed img {
-=======
-  .fixed img {
->>>>>>> refs/remotes/origin/master
-    filter: invert(100%);
-  }
+    .fixed img {
+      /* filter: invert(100%); */
+    }
 
-  .fixed .crypton-btn {
-    color: black;
-    border: 1px solid black;
-  }
+    .fixed .crypton-btn {
+      color: white;
+      border: 1px solid white;
+    }
 
-  .fixed .crypton-logo {
-    color: black;
-  }
+    .fixed .crypton-logo {
+      color: white;
+    }
 
-  .fixed .navbar-toggler-icon {
-    filter: invert(100%);
-<<<<<<< HEAD
-  }*/
-=======
-  }
-  .navbar-nav > li > a {padding-top:8px !important; padding-bottom:8px !important;}
-.navbar {min-height:32px !important}
+    .fixed .navbar-toggler-icon {
+      filter: invert(100%);
+    }
 
->>>>>>> refs/remotes/origin/master
+    .navbar-nav>li>a {
+      padding-top: 8px !important;
+      padding-bottom: 8px !important;
+    }
+
+    .navbar {
+      min-height: 32px !important
+    }
+
 
     .navbar-nav>li>a {
       padding-top: 8px !important;
@@ -288,7 +318,7 @@
             <small id='result'></small>
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
-          <button type="button" id='submitEmail' class="btn btn-block btn-lg btn-outline-light">Join</button>
+          <button type="button" id='submitEmail' class="btn btn-block btn-lg btn-outline-light">JOIN</button>
         </form>
       </div>
       <!-- <div class="modal-footer">
@@ -306,7 +336,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top color-change" id="navbar">
       <a class="navbar-brand crypton-logo" href="index.html">
         <span class="align-baseline">
-          <img src="./assets/brand/logo_transparent.png" width="45" height="45" class="d-inline-block align-middle" alt="Crypton"> CRYPTON
+          <img src="./assets/brand/logo_transparent.png" width="45" height="45" class="d-inline-block align-middle" alt="Crypton"> 
+          <span class='header-title'>CRYPTON</span>
         </span>
       </a>
 
@@ -344,7 +375,7 @@
           </li>
           <li class="nav-item active">
             <button type="button" class="btn btn-outline-light crypton-btn" data-toggle="modal" data-target="#emailModal">
-              Early Access</button>
+              EARLY ACCESS</button>
           </li>
         </ul>
       </div>
@@ -360,11 +391,10 @@
             <div class="col-md-7">
               <div class="header-content my-auto mx-auto justify-content-end">
                 <div class="title">
-                  <h1 class=''>Investing in cryptocurrency should be simple.</h1>
-                  <h2 class="mb-5 text-light">Crypton turns your spare change into Bitcoin, Litecoin, & Ethereum automatically with as little as $5.</h2>
-                  <!-- <h2 class="presentation-subtitle"> Crypton turns your spare change into Bitcoin, Litecoin, and Ethereum automatically.</h2> -->
+                  <h1>Investing in cryptocurrency should be simple.</h1>
+                  <h2 class="mb-4 text-light">Crypton turns your spare change into Bitcoin, Litecoin, & Ethereum automatically with as little as $5.</h2>
                   <button type="button" class="btn btn-block btn-outline-light" data-toggle="modal" data-target="#emailModal">
-                    Early Access</button>
+                    EARLY ACCESS</button>
                 </div>
               </div>
             </div>
