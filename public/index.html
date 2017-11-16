@@ -140,47 +140,47 @@
 
   <!-- features section  -->
   <section class="features" id="features">
-    <div class="container">
+    <div class="container my-auto">
       <div class="section-heading text-center">
         <h4 class="display-4">How Crypton Works</h4>
-      </div>
+
 
       <!-- Start how it works -->
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-4">
-              <div class="feature-item">
-                <i class="fa fa-credit-card text-primary"></i>
-                <h3 style="padding-top: 20px;">SECURELY LINK A CARD</h3>
+              <div class="feature-item" >
+                <i class="fa fa-credit-card text-primary" id="credit" onmousedown="$('#credit').animateCss('slideInLeft');"></i>
+                <h3 style="margin-top: 20px;">SECURELY LINK A CARD</h3>
                 <p class="text-muted">Use your debit card to connect to an existing bank account.</p>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="feature-item">
-                <i class="fa fa-money text-primary"></i>
-                <h3 style="padding-top: 20px;">MAKE A</h3><h3> PURCHASE</h3>
+                <i class="fa fa-money text-primary" id="purchase" onmousedown="$('#purchase').animateCss('zoomOutUp');"></i>
+                <h3 style="margin-top: 20px;">MAKE A</h3><h3> PURCHASE</h3>
                 <p class="text-muted">Each time you make a purchase, we’ll roundup your charge to the nearest dollar.</p>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="feature-item">
-                <i class="fa fa-thumbs-o-up text-primary"></i>
-                <h3 style="padding-top: 20px;">ROUND UP SPARE CHANGE</h3>
+                <i class="fa fa-thumbs-o-up text-primary" id="roundup" onmousedown="$('#roundup').animateCss('bounce');"></i>
+                <h3 style="margin-top: 20px;">ROUND UP SPARE CHANGE</h3>
                 <p class="text-muted">Choose the amount you would like to invest into Bitcoin, Ethereum, and Litecoin.</p>
               </div>
             </div>
           </div>
         </div>
-
-<hr>
+     </div>
+   </div>
+     <hr>
 <!-- Start how to purchase -->
 
-    <div class="container" style="padding-top: 100px;">
-      <div class="section-heading text-center">
+    <div class="container-fluid" >
+      <div class="container section-heading text-center">
         <h4 class="display-4">Ways to Invest</h4>
-
       </div>
-      <div class="row">
+      <div class="row d-flex inline block">
 
         <div class="col-lg-4 my-auto">
           <div class="device-container">
@@ -201,19 +201,19 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="feature-item">
-                  <div class="btn btn-outline-danger disabled" style="background: transparent; border: 0px" onmouseover="$('#roundup').animateCss('slideOutUp');">
-                  <i class="fa fa-arrow-up text-primary" id="roundup"></i>
+                  <div class="btn btn-outline-danger disabled" style="background: transparent; border: 0px" onmousedown="$('#spare').animateCss('slideOutUp');">
+                  <i class="fa fa-arrow-up text-primary" id="spare"></i>
                 </div>
-                  <h3 style="padding-top: 20px;">SPARE CHANGE ROUND-UPS</h3>
+                  <h3>SPARE CHANGE ROUND-UPS</h3>
                   <p class="text-muted">Round your daily purchases to the nearest dollar and acquire Bitcoin, Litecoin, & Ethereum.</p>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="feature-item">
-                  <div class="btn btn-outline-danger disabled" style="background: transparent; border: 0px" onmouseover="$('#recur').animateCss('rotateOut');">
+                  <div class="btn btn-outline-danger disabled" style="background: transparent; border: 0px" onmousedown="$('#recur').animateCss('rotateOut');">
                   <i class="fa fa-repeat text-primary" id="recur"></i>
                 </div>
-                  <h3 style="padding-top: 20px;">RECURRING INVESTMENTS</h3>
+                  <h3>RECURRING INVESTMENTS</h3>
                   <p class="text-muted">Automatically purchase a pre-set dollar amount of digital currency on a pre-set basis.</p>
                 </div>
               </div>
@@ -221,19 +221,19 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="feature-item">
-                  <div class="btn btn-outline-danger disabled" style="background: transparent; border: 0px" onmouseover="$('#multiply').animateCss('pulse');">
+                  <div class="btn btn-outline-danger disabled" style="background: transparent; border: 0px" onmousedown="$('#multiply').animateCss('pulse');">
                   <i class="fa fa-plus-square-o text-primary" id="multiply"></i>
                 </div>
-                  <h3 style="padding-top: 20px;">CUSTOM MULTIPLIERS</h3>
+                  <h3>CUSTOM MULTIPLIERS</h3>
                   <p class="text-muted">Boost your Spare Change Round-Ups by the multiple of your choice.</p>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="feature-item">
-                  <div class="btn btn-outline-danger disabled" style="background: transparent; border: 0px" onmouseover="$('#ontap').animateCss('flash');">
+                  <div class="btn btn-outline-danger disabled" style="background: transparent; border: 0px" onmousedown="$('#ontap').animateCss('flash');">
                   <i class="fa fa-btc text-primary" id="ontap"></i>
                 </div>
-                  <h3 style="padding-top: 20px;">CRYPTO ON</h3><h3>TAP</h3>
+                  <h3>CRYPTO ON</h3><h3>TAP</h3>
                   <p class="text-muted">Buy or Sell any amount of digital currency at any time.</p>
                 </div>
               </div>
@@ -242,6 +242,7 @@
         </div>
       </div>
     </div>
+
 
   </section>
 
