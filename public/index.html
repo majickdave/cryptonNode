@@ -21,7 +21,7 @@
 
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700" />
   <!-- <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
-  
+
   <!-- <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -34,6 +34,14 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
 
   <style>
+
+  html,
+  body {
+    width: 100%;
+    height: 100%; }
+
+  body {
+    font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif'; }
     h1,
     h2,
     h3,
@@ -41,11 +49,10 @@
     h5,
     h6 {
       -webkit-font-smoothing: antialiased;
-      font-family: "Roboto", "Helvetica", "Arial", "sans-serif";
-      font-weight: 300;
-      line-height: 1.1;
-      padding-bottom: 5px;
-    }
+      font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+      font-weight: 200;
+      letter-spacing: 1px; }
+
     .title h2 {
       font-size: 1.3em;
     }
@@ -58,14 +65,7 @@
     span.header-title {
       font-weight: 300;
     }
-    /* div.container {
-      margin-left: 0px;
-      margin-right: 0px;
-    } */
-    /* nav.navbar {
-      padding-left: 90px;
-      padding-right: 90px;
-    } */
+
     .nav-item .container {
       padding-left: 0;
       padding-right: 0;
@@ -73,19 +73,13 @@
     i.fa {
       font-size: 20px;
     }
-    button.btn{
+    /*button.btn{
      cursor: pointer;
      text-transform: capitalize;
      font-weight: 300;
      font-size: 12px;
      padding: 12px 30px 12px 30px;
-    }
-
-    p {
-      font-size: 18px;
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
+    }*/
 
     section {
       padding: 100px 0;
@@ -105,7 +99,7 @@
 
     header.masthead .header-content {
       max-width: 500px;
-      margin-bottom: 100px;
+      margin-bottom: 50px;
       text-align: center;
     }
 
@@ -142,9 +136,6 @@
       }
     }
 
-    section {
-      padding: 100px 0;
-    }
 
 
     section.features .section-heading {
@@ -203,26 +194,6 @@
       background-color: #222222;
     }
 
-    footer p {
-      font-size: 12px;
-      margin: 0;
-    }
-
-    footer ul {
-      margin-bottom: 0;
-    }
-
-    footer ul li a {
-      font-size: 12px;
-      color: rgba(255, 255, 255, 0.3);
-    }
-
-    footer ul li a:hover,
-    footer ul li a:focus,
-    footer ul li a:active,
-    footer ul li a.active {
-      text-decoration: none;
-    }
 
     #info img {
       max-height: 300px;
@@ -232,10 +203,6 @@
       padding-bottom: 20px;
     }
 
-    #top img {
-      height: auto;
-      margin-bottom: 10%;
-    }
 
     #features img {
       padding-bottom: 15px;
@@ -248,54 +215,73 @@
       transition: 500ms;
     }
 
-    
-
     .fixed {
-      /* background: #54396b; */
-      background: rgb(124, 67, 117);
+       background: #54396b;
+      /*background: purple;*/
       /* background: white; */
-
     }
 
-    .fixed a {
-      color: white;
-    }
-
-    .fixed img {
-      /* filter: invert(100%); */
-    }
-
-    .fixed .crypton-btn {
-      color: white;
-      border: 1px solid white;
-    }
-
-    .fixed .crypton-logo {
-      color: white;
-    }
-
-    .fixed .navbar-toggler-icon {
-      filter: invert(100%);
-    }
-
-    .navbar-nav>li>a {
-      padding-top: 8px !important;
-      padding-bottom: 8px !important;
-    }
 
     .navbar {
-      min-height: 32px !important
+      min-height: 32px !important;
+
     }
 
 
-    .navbar-nav>li>a {
-      padding-top: 8px !important;
-      padding-bottom: 8px !important;
-    }
+  /* change navbar-brand color */
+  .navbar a.navbar-brand {
+    color: #efefef;
+  }
+  /* change navbar-brand color on hover */
+  .navbar a.navbar-brand:hover {
+    color: white;
+  }
+  .navbar img.navbar-brand {
+    filter: brightness(0.5)
+  }
+  .navbar img.navbar-brand:hover {
+    filter: brightness(1);
+  }
 
-    .navbar {
-      min-height: 32px !important
-    }
+  /* change navbar-toggler inside lines color (stroke) */
+  .navbar-light span.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='square' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    color: white;
+  }
+
+  a.btn {
+    background: transparent;
+    color: #efefef;
+  }
+
+  a {
+
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s; }
+    a:hover, a:focus {
+      color: white; }
+
+  a > i {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .navbar .btn {
+    width: 100%;
+    padding: .8rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  footer {
+    padding: 25px 0;
+    text-align: center;
+    background: #54396b; }
+    footer p {
+      font-size: 12px;
+      margin: 0; }
+
   </style>
 
 </head>
@@ -303,10 +289,10 @@
 <!-- Modal -->
 <div class="modal fade " id="emailModal" class='emailModal' tabindex="-1" role="dialog" aria-labelledby="emailModalLabel"
   aria-hidden="true" data-keyboard="false" data-backdrop="static">
-  <div class="modal-dialog round" role="document">
-    <div class="modal-content" style="background: rgb(124, 67, 117)">
-      <div class="modal-header text-light">
-        <h5 class="modal-title text-center" id="emailModalLabel">Join Crypton</h5>
+  <div class="modal-dialog round " role="document">
+    <div class="modal-content " style="background: #54396b">
+      <div class="modal-header">
+        <h5 class="modal-title text-light font-weight-bold" id="emailModalLabel">Join Crypton</h5>
         <button type="button" class="close text-light" onclick='hideModal()' aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -318,7 +304,7 @@
             <small id='result'></small>
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
-          <button type="button" id='submitEmail' class="btn btn-block btn-lg btn-outline-light">JOIN</button>
+          <button type="button" id='submitEmail' class="btn btn-lg btn-outline-light">JOIN</button>
         </form>
       </div>
       <!-- <div class="modal-footer">
@@ -331,75 +317,70 @@
 <body id="top">
 
   <!-- Begin gradient pattern -->
-  <div class="container-fluid bg-crypton-pattern">
+  <div class="bg-crypton-pattern">
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top color-change" id="navbar">
-      <a class="navbar-brand crypton-logo" href="index.html">
-        <span class="align-baseline">
-          <img src="./assets/brand/logo_transparent.png" width="45" height="45" class="d-inline-block align-middle" alt="Crypton"> 
-          <span class='header-title'>CRYPTON</span>
-        </span>
+    <nav role="navigation" class="navbar navbar-expand-md fixed-top navbar-toggleable-md navbar-light bg-faded" id="navbar">
+      <div class="container ">
+      <a class="navbar-brand" href="/">
+        <img src="./assets/brand/logo_transparent.png" width="30" height="30" class="d-inline-block align-top" alt="Crypton">
+        CRYPTON
       </a>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-        aria-expanded="true" aria-label="Toggle navigation" style="border: 0px; color: white">
-        <span class="navbar-toggler-icon custom-toggler"></span>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+        aria-expanded="true" aria-label="Toggle navigation" style="border: none">
+        <span class="navbar-toggler-icon"></span>
       </button>
 
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-        <ul class="nav justify-content-end">
+        <ul class="nav justify-content-center">
           <li class="nav-item active">
             <div class='container'>
               <a rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/getcrypton" target="_blank"
-                rel="noopener noreferrer" class="btn btn-outline-light btn-simple btn-just-icon" style="border: 0px">
+                rel="noopener noreferrer" class="btn">
                 <i class="fa fa-twitter"></i>
               </a>
             </div>
           </li>
           <li class="nav-item active">
-            <div class='container'>
               <a rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/getcrypton" target="_blank"
-                rel="noopener noreferrer" class="btn btn-outline-light btn-simple btn-just-icon" style="border: 0px">
+                rel="noopener noreferrer" class="btn">
                 <i class="fa fa-facebook-square"></i>
               </a>
-            </div>
           </li>
           <li class="nav-item active">
-            <div class='container'>
               <a rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/getcrypton" target="_blank"
-                rel="noopener noreferrer" class="btn btn-outline-light btn-simple btn-just-icon" style="border: 0px">
+                rel="noopener noreferrer" class="btn">
                 <i class="fa fa-instagram"></i>
               </a>
-            </div>
           </li>
-          <li class="nav-item active">
-            <button type="button" class="btn btn-outline-light crypton-btn" data-toggle="modal" data-target="#emailModal">
+          <li class="nav-item">
+            <button type="button" class="btn btn-sm btn-outline-light" data-toggle="modal" data-target="#emailModal">
               EARLY ACCESS</button>
           </li>
-        </ul>
+         </ul>
       </div>
+    </div>
     </nav>
 
     <!-- Begin page content -->
     <main role="main" id="content">
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
-      <header class="masthead d-flex block-inline">
-        <div class="container h-100 my-auto">
-          <div class="row h-100 d-flex align-items-start">
-            <div class="col-md-7">
-              <div class="header-content my-auto mx-auto justify-content-end">
-                <div class="title">
-                  <h1>Investing in cryptocurrency should be simple.</h1>
-                  <h2 class="mb-4 text-light">Crypton turns your spare change into Bitcoin, Litecoin, & Ethereum automatically with as little as $5.</h2>
-                  <button type="button" class="btn btn-block btn-outline-light" data-toggle="modal" data-target="#emailModal">
+      <header class="masthead">
+        <div class="container h-100" style="position: relative; top: -10%">
+          <div class="row h-100">
+            <div class="col-lg-7 my-auto">
+              <div class="header-content mx-auto">
+                  <h1 class="header-title font-weight-bold">Investing in cryptocurrency should be simple.</h1>
+                  <h3 class="header-subtitle">Crypton turns your spare change into Bitcoin, Litecoin, & Ethereum automatically with as little as $5.</h3>
+                  <button type="button" class="btn btn-lg btn-block btn-outline-light" data-toggle="modal" data-target="#emailModal" id="cryptonButton">
                     EARLY ACCESS</button>
-                </div>
               </div>
             </div>
-            <div class="col-lg-5 mx-auto align-items-center">
+            <div class="col-lg-5 my-auto" >
+
               <img src="assets/images/screenshot_white-iphone7.png" class="img-fluid" height="auto">
+
             </div>
           </div>
         </div>
@@ -470,60 +451,54 @@
 
   <section class="bg-dark text-light" id="portfolio">
     <div class="container text-center">
-      <div class="title">
-        <h2>The Team</h2>
-        <br>
-      </div>
-      <div class="row">
-        <div class="card-deck text-dark">
-          <div class="card">
-            <img class="card-img-top image-fit" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAflAAAAJDFhNjY4NDNhLTdmYTctNGQ4Ni04NDEwLWU2MTk5Y2YxNmViYQ.jpg"
-              alt="blase bielo">
-            <div class="card-body">
-              <h4 class="card-title">Blase Biello</h4>
-              <p class="card-text">co-Founder, CEO</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">USC Alumnus</small>
+      <h2 class="display-3">The Team</h2>
+    </div>
+      <div class="container">
+        <div class="row my-auto">
+          <div class="col">
+            <div class="container text-center">
+              <img class="img rounded-circle" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAflAAAAJDFhNjY4NDNhLTdmYTctNGQ4Ni04NDEwLWU2MTk5Y2YxNmViYQ.jpg"
+                alt="blase bielo" height="auto" width="200px">
+                <h4>Blase Biello</h4>
+                <span><p>co-Founder, CEO</p><a href="" rel="tooltip" title="Follow Blase on Linkedin" data-placement="bottom"><i class="fa fa-linkedin"></i></a></span>
             </div>
           </div>
 
-          <div class="card">
-            <img class="card-img-top" src="assets/images/me-solid.png" alt="david samuel">
-            <div class="card-body">
-              <h4 class="card-title">David Samuel</h4>
-              <p class="card-text">co-Founder, CTO</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">M.S. Data Science, SMU</small>
-            </div>
+          <div class="col">
+            <div class="container text-center">
+            <img class="rounded-circle" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA2PAAAAJDJhYWQ5YTQ3LWRjMjUtNDE1NS04OGE1LTAzZDJmYjZlNTUxOA.jpg"
+            height="auto" width="200px" alt="david samuel">
+              <h4>David Samuel</h4>
+            <span><p>co-Founder, CTO</p><a href="https://www.linkedin.com/in/datascienceinsight/"
+              rel="tooltip" title="Follow David on Linkedin" data-placement="bottom"><i class="fa fa-linkedin"></i></a></span>
           </div>
-          <div class="card">
-            <img class="card-img-top" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAxjAAAAJGUwZTM0ZmU0LWNiOWEtNDM1Ny1iODA3LTk0ZjFhMzI4M2M1Ng.jpg"
-              alt="evan mair">
-            <div class="card-body">
-              <h4 class="card-title">Evan Mair</h4>
-              <p class="card-text">co-Founder, CFO</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">USC Alumnus</small>
-            </div>
+        </div>
+
+          <div class="col">
+            <div class="container text-center">
+            <img class="rounded-circle" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAxjAAAAJGUwZTM0ZmU0LWNiOWEtNDM1Ny1iODA3LTk0ZjFhMzI4M2M1Ng.jpg"
+              height="auto" width="200px" alt="evan mair">
+              <h4>Evan Mair</h4>
+              <span><p>co-Founder, CFO</p><a href="" rel="tooltip" title="Follow Evan on Linkedin" data-placement="bottom"><i class="fa fa-linkedin"></i></a></span>
           </div>
+        </div>
+
         </div>
       </div>
     </div>
+  </div>
 
   </section>
 
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2017 - Crypton Holdings, LLC.</p>
-    </div>
-  </footer>
+  <footer class="bg-light text-dark">
+        <div class="container">
+          <p>&copy; <script>new Date().getFullYear()>document.write(+new Date().getFullYear());</script> - Crypton Holdings, LLC.</p>
+        </div>
+      </footer>
 
-  </main>
 
+</body>
 
 
   <!-- Bootstrap core JavaScript
@@ -551,7 +526,7 @@
   </script>
   <script>
     $(window).scroll(function () {
-      if ($(window).scrollTop() > 50) {
+      if ($(window).scrollTop() > 100) {
         $('.navbar').addClass('fixed');
       }
       else {

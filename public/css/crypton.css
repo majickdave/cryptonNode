@@ -1,0 +1,267 @@
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Roboto", "Helvetica", "Arial", "sans-serif";
+    font-weight: 300;
+    line-height: 1.1;
+    padding-bottom: 5px;
+  }
+  .title h2 {
+    font-size: 1.3em;
+  }
+  .title h1 {
+    margin-right: 40px;
+  }
+  .title {
+    margin-top: 200px;
+  }
+  span.header-title {
+    font-weight: 300;
+  }
+  /* div.container {
+    margin-left: 0px;
+    margin-right: 0px;
+  } */
+  /* nav.navbar {
+    padding-left: 90px;
+    padding-right: 90px;
+  } */
+  .nav-item .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  i.fa {
+    font-size: 20px;
+  }
+  button.btn{
+   cursor: pointer;
+   text-transform: capitalize;
+   font-weight: 300;
+   font-size: 12px;
+   padding: 12px 30px 12px 30px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  section {
+    padding: 100px 0;
+  }
+
+  section h2 {
+    font-size: 50px;
+  }
+
+  header.masthead {
+    position: relative;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    color: white;
+  }
+
+  header.masthead .header-content {
+    max-width: 500px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  header.masthead .header-content h1 {
+    font-size: 30px;
+  }
+
+  header.masthead .device-container {
+    max-width: 325px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  header.masthead .device-container .screen img {
+    border-radius: 3px;
+  }
+
+  @media (min-width: 992px) {
+    header.masthead {
+      height: 100vh;
+      min-height: 775px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    header.masthead .header-content {
+      margin-bottom: 0;
+      text-align: left;
+    }
+    header.masthead .header-content h1 {
+      font-size: 50px;
+    }
+    header.masthead .device-container {
+      max-width: 325px;
+    }
+  }
+
+  section {
+    padding: 100px 0;
+  }
+
+
+  section.features .section-heading {
+    margin-bottom: 100px;
+  }
+
+  section.features .section-heading h2 {
+    margin-top: 0;
+  }
+
+  section.features .section-heading p {
+    margin-bottom: 0;
+  }
+
+  section.features .device-container,
+  section.features .feature-item {
+    max-width: 325px;
+    margin: 0 auto;
+  }
+
+  section.features .device-container {
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: 992px) {
+    section.features .device-container {
+      margin-bottom: 0;
+    }
+  }
+
+  section.features .feature-item {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  section.features .feature-item h3 {
+    font-size: 30px;
+  }
+
+  section.features .feature-item i {
+    font-size: 80px;
+    display: block;
+    margin-bottom: 15px;
+    background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
+    background: linear-gradient(to left, #7b4397, #dc2430);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  footer {
+    padding: 25px 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #222222;
+  }
+
+  footer p {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  footer ul {
+    margin-bottom: 0;
+  }
+
+  footer ul li a {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  footer ul li a:hover,
+  footer ul li a:focus,
+  footer ul li a:active,
+  footer ul li a.active {
+    text-decoration: none;
+  }
+
+  #info img {
+    max-height: 300px;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+
+  #features img {
+    padding-bottom: 15px;
+  }
+
+  .navbar {
+    min-height: 100px;
+    max-width: 100%;
+    background: transparent;
+    transition: 500ms;
+  }
+
+
+
+  .fixed {
+    /* background: #54396b; */
+    background: rgb(124, 67, 117);
+    /* background: white; */
+
+  }
+
+  .fixed a {
+    color: white;
+  }
+
+  .fixed img {
+    /* filter: invert(100%); */
+  }
+
+  .fixed .crypton-btn {
+    color: white;
+    border: 1px solid white;
+  }
+
+  .fixed .crypton-logo {
+    color: white;
+  }
+
+  .fixed .navbar-toggler-icon {
+    color: white;
+    background-color: transparent;
+  }
+
+  .navbar-nav>li>a {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+  }
+
+  .navbar {
+    min-height: 32px !important
+  }
+
+
+  .navbar-nav>li>a {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+  }
+
+  .navbar {
+    min-height: 32px !important
+  }
+
+  .col-md-7, .col-lg-5 {
+  float:none;
+  display:inline-block;
+  vertical-align:middle;
+  margin-right:-4px;
+}
