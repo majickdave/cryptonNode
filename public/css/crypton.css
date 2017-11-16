@@ -1,24 +1,4 @@
-html {
-  font-size: 1rem;
-}
 
-@include media-breakpoint-up(sm) {
-  html {
-    font-size: 1.2rem;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  html {
-    font-size: 1.4rem;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  html {
-    font-size: 1.6rem;
-  }
-}
   html,
   body {
     width: 100%;
@@ -59,14 +39,13 @@ html {
     }
     button.btn{
      cursor: pointer;
-     text-transform: capitalize;
-     font-weight: 300;
-     font-size: 12px;
-     padding: 12px 30px 12px 30px;
      width: 100%;
      padding: .8rem 2rem;
      font-size: 1.2rem;
+     font-weight: 300;
     }
+    button.btn:hover, button.btn:focus {
+      color: purple; }
 
     section {
       padding: 100px 0;
@@ -252,12 +231,12 @@ html {
     padding-right: 5px;
   }
 
-  /*.navbar .btn {
+  .navbar .btn {
     width: 100%;
     padding: .8rem 2rem;
-    font-size: 1.2rem;
-    font-weight: 400;
-  }*/
+    font-size: 1rem;
+    font-weight: 200;
+  }
 
   footer {
     padding: 25px 0;
