@@ -43,7 +43,7 @@
      width: 100%;
      padding: .8rem 2rem;
      font-size: 1.2rem;
-     font-weight: 300;
+     font-weight: 400;
     }
     button.btn:hover, button.btn:focus {
       color: purple; }
@@ -216,7 +216,7 @@
 
   a.btn {
     background: transparent;
-    color: #efefef;
+    color: lightgrey;
   }
 
   a {
@@ -236,7 +236,7 @@
     width: 100%;
     padding: .5rem 2rem;
     font-size: 1.2rem;
-    font-weight: 200;
+    font-weight: 300;
   }
 
   footer {

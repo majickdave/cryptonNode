@@ -152,21 +152,21 @@
             <div class="col-lg-4">
               <div class="feature-item">
                 <i class="fa fa-credit-card text-primary"></i>
-                <h3>SECURELY LINK A CARD</h3>
+                <h3 style="padding-top: 20px;">SECURELY LINK A CARD</h3>
                 <p class="text-muted">Use your debit card to connect to an existing bank account.</p>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="feature-item">
-                <i class="fa fa-usd text-primary"></i>
-                <h3>MAKE A PURCHASE</h3>
+                <i class="fa fa-money text-primary"></i>
+                <h3 style="padding-top: 20px;">MAKE A</h3><h3> PURCHASE</h3>
                 <p class="text-muted">Each time you make a purchase, we’ll roundup your charge to the nearest dollar.</p>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="feature-item">
                 <i class="fa fa-thumbs-o-up text-primary"></i>
-                <h3>ROUND UP SPARE CHANGE</h3>
+                <h3 style="padding-top: 20px;">ROUND UP SPARE CHANGE</h3>
                 <p class="text-muted">Choose the amount you would like to invest into Bitcoin, Ethereum, and Litecoin.</p>
               </div>
             </div>
@@ -175,7 +175,12 @@
 
 <hr>
 <!-- Start how to purchase -->
+
     <div class="container" style="padding-top: 100px;">
+      <div class="section-heading text-center">
+        <h4 class="display-4">Ways to Invest</h4>
+
+      </div>
       <div class="row">
 
         <div class="col-lg-4 my-auto">
@@ -197,19 +202,19 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="feature-item">
-                  <div class="alert alert-danger" style="background: transparent;">
-                  <i class="fa fa-arrow-up text-primary"></i>
+                  <div class="btn btn-outline-danger disabled" style="background: transparent; border: 0px" onmouseover="$('#roundup').animateCss('slideOutUp');">
+                  <i class="fa fa-arrow-up text-primary" id="roundup"></i>
                 </div>
-                  <h3>SPARE CHANGE ROUND-UPS</h3>
+                  <h3 style="padding-top: 20px;">SPARE CHANGE ROUND-UPS</h3>
                   <p class="text-muted">Round your daily purchases to the nearest dollar and acquire Bitcoin, Litecoin, & Ethereum.</p>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="feature-item">
-                  <div class="alert alert-danger" style="background: transparent">
-                  <i class="fa fa-repeat text-primary"></i>
+                  <div class="btn btn-outline-danger disabled" style="background: transparent; border: 0px" onmouseover="$('#recur').animateCss('rotateOut');">
+                  <i class="fa fa-repeat text-primary" id="recur"></i>
                 </div>
-                  <h3>RECURRING INVESTMENTS</h3>
+                  <h3 style="padding-top: 20px;">RECURRING INVESTMENTS</h3>
                   <p class="text-muted">Automatically purchase a pre-set dollar amount of digital currency on a pre-set basis.</p>
                 </div>
               </div>
@@ -217,19 +222,19 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="feature-item">
-                  <div class="alert alert-danger" style="background: transparent">
-                  <i class="fa fa-plus-square-o text-primary"></i>
+                  <div class="btn btn-outline-danger disabled" style="background: transparent; border: 0px" onmouseover="$('#multiply').animateCss('pulse');">
+                  <i class="fa fa-plus-square-o text-primary" id="multiply"></i>
                 </div>
-                  <h3>CUSTOM MULTIPLIERS</h3>
+                  <h3 style="padding-top: 20px;">CUSTOM MULTIPLIERS</h3>
                   <p class="text-muted">Boost your Spare Change Round-Ups by the multiple of your choice.</p>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="feature-item">
-                  <div class="alert alert-danger" style="background: transparent">
-                  <i class="fa fa-money text-primary"></i>
+                  <div class="btn btn-outline-danger disabled" style="background: transparent; border: 0px" onmouseover="$('#ontap').animateCss('flash');">
+                  <i class="fa fa-btc text-primary" id="ontap"></i>
                 </div>
-                  <h3 class="text-nowrap">CRYPTO ON</h3><h3>TAP</h3>
+                  <h3 style="padding-top: 20px;">CRYPTO ON</h3><h3>TAP</h3>
                   <p class="text-muted">Buy or Sell any amount of digital currency at any time.</p>
                 </div>
               </div>
@@ -243,37 +248,42 @@
 
   <section class="bg-dark text-light" id="portfolio">
     <div class="container">
-      <h2 class="display-3 text-center">The Team</h2><br>
-
+      <h2 class="display-4 text-center">The Team</h2><br>
+    </div>
       <div class="container">
-        <div class="row my-auto">
-          <div class="col">
-            <div class="container text-center">
-              <img class="img rounded-circle" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAflAAAAJDFhNjY4NDNhLTdmYTctNGQ4Ni04NDEwLWU2MTk5Y2YxNmViYQ.jpg"
-                alt="blase bielo" height="auto" width="200px">
-                <h3 class="font-weight-bold"  style="padding-top: 20px">Blase Biello</h3>
-                <p class="font-weight-light">co-Founder, CEO</p>
-                <a href="" rel="tooltip" title="Follow Blase on Linkedin" data-placement="bottom"><i class="fa fa-linkedin text-danger"></i></a>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="container text-center" style="margin-bottom: 50px">
+              <img class="img img-thumbnail rounded-circle bg-crypton-pattern" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAflAAAAJDFhNjY4NDNhLTdmYTctNGQ4Ni04NDEwLWU2MTk5Y2YxNmViYQ.jpg"
+                alt="blase bielo" height="auto" width="150px" style="border: 0px">
+                <h3 class="font-weight-bold">Blase Biello</h3>
+                <p class="font-weight-light text-muted">co-Founder, CEO</p>
+                <a class="btn" href="https://www.linkedin.com/in/blasebiello/" rel="tooltip" title="Follow Blase on Linkedin" data-placement="bottom">
+                  <i class="fa fa-linkedin"></i></a>
+                <a class="btn" href="https://medium.com/@blasebiello" rel="tooltip" title="Follow Blase on Linkedin" data-placement="bottom">
+                  <i class="fa fa-medium"></i></a>
             </div>
           </div>
 
-          <div class="col">
-            <div class="container text-center">
-            <img class="rounded-circle" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA2PAAAAJDJhYWQ5YTQ3LWRjMjUtNDE1NS04OGE1LTAzZDJmYjZlNTUxOA.jpg"
-            height="auto" width="200px" alt="david samuel" >
-            <h3 class="font-weight-bold" style="padding-top: 20px">David Samuel</h3>
-            <p class="font-weight-light">co-Founder, CTO</p>
-              <a href="https://www.linkedin.com/in/datascienceinsight/" rel="tooltip" title="Follow David on Linkedin" data-placement="bottom"><i class="fa fa-linkedin text-danger"></i></a>
+          <div class="col-lg-4">
+            <div class="container text-center" style="margin-bottom: 50px">
+            <img class="img img-thumbnail rounded-circle bg-crypton-pattern" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA2PAAAAJDJhYWQ5YTQ3LWRjMjUtNDE1NS04OGE1LTAzZDJmYjZlNTUxOA.jpg"
+            height="auto" width="150px" alt="david samuel" style="border: 0px">
+            <h3 class="font-weight-bold">David Samuel</h3>
+            <p class="font-weight-light text-muted">co-Founder, CTO</p>
+              <a class="btn" href="https://www.linkedin.com/in/datascienceinsight/" rel="tooltip" title="Follow David on Linkedin" data-placement="bottom">
+                <i class="fa fa-linkedin"></i></a>
           </div>
         </div>
 
-          <div class="col">
-            <div class="container text-center">
-            <img class="rounded-circle" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAxjAAAAJGUwZTM0ZmU0LWNiOWEtNDM1Ny1iODA3LTk0ZjFhMzI4M2M1Ng.jpg"
-              height="auto" width="200px" alt="evan mair">
-              <h3 class="font-weight-bold" style="padding-top: 20px">Evan Mair</h3>
-              <p class="font-weight-light">co-Founder, CFO</p>
-              <a href="" rel="tooltip" title="Follow Evan on Linkedin" data-placement="bottom"><i class="fa fa-linkedin text-danger"></i></a></span>
+          <div class="col-lg-4">
+            <div class="container text-center" style="margin-bottom: 50px">
+            <img class="img img-thumbnail rounded-circle bg-crypton-pattern" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAxjAAAAJGUwZTM0ZmU0LWNiOWEtNDM1Ny1iODA3LTk0ZjFhMzI4M2M1Ng.jpg"
+              height="auto" width="150px" alt="evan mair" style="border: 0px">
+              <h3 class="font-weight-bold">Evan Mair</h3>
+              <p class="font-weight-light text-muted">co-Founder, CFO</p>
+              <a class="btn" href="https://www.linkedin.com/in/evantmair/" rel="tooltip" title="Follow Evan on Linkedin" data-placement="bottom">
+                <i class="fa fa-linkedin"></i></a></span>
           </div>
         </div>
 
