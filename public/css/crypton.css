@@ -177,20 +177,18 @@
       max-width: 100%;
       background: transparent;
       transition: 500ms;
+      min-height: 32px !important;
+    }
+
+    .not-fixed {
+      position: absolute;
     }
 
     .fixed {
-       background: #54396b;
+      background: #54396b;
       /*background: purple;*/
       /* background: white; */
     }
-
-
-    .navbar {
-      min-height: 32px !important;
-
-    }
-
 
   /* change navbar-brand color */
   .navbar a.navbar-brand {
