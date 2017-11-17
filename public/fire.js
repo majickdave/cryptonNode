@@ -14,7 +14,8 @@
 
     document.getElementById("submitEmail").onclick = submit;
 
-    function submit() {
+    function submit(e) {
+        e.preventDefault();
         var id = Date.now()
         var email = $('#emailModal #emailInput').val();
         var re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;

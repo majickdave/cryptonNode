@@ -43,26 +43,29 @@
     <div class="modal-content " style="background: #54396b">
       <div class="modal-header">
         <h5 class="modal-title text-light font-weight-bold" id="emailModalLabel">Join Crypton</h5>
-        <button type="button" class="close text-light" onclick='hideModal()' aria-label="Close">
+        <button type="button" class="close text-light" data-dismiss='modal' aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
         <form id='emailForm'>
           <div class="form-group">
-            <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
+            <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email" autofocus>
             <small id='result'></small>
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
-          <button type="button" id='submitEmail' class="btn btn-block btn-outline-light">JOIN</button>
+          <button type="submit" id='submitEmail' class="btn btn-block btn-outline-light">JOIN</button>
         </form>
       </div>
       <!-- <div class="modal-footer">
+
+
 
           </div> -->
     </div>
   </div>
 </div>
+
 
 <body id="top">
 
@@ -145,7 +148,7 @@
   </div>
 
   <!-- features section  -->
-  <section class="features" id="features">
+  <section class="features" id="features" >
     <div class="container my-auto">
       <div class="section-heading text-center">
         <h4 class="display-4">How Crypton Works</h4>
@@ -182,11 +185,11 @@
      <hr>
 <!-- Start how to purchase -->
 
-    <div class="container-fluid" >
+    <div class="container" >
       <div class="container section-heading text-center">
         <h4 class="display-4">Ways to Invest</h4>
       </div>
-      <div class="row d-flex inline block">
+      <div class="row inline block">
 
         <div class="col-lg-4 my-auto">
           <div class="device-container">
@@ -252,7 +255,7 @@
 
   </section>
 
-  <section class="bg-dark text-light" id="portfolio">
+  <section class="bg-dark text-light" id="portfolio" style="height: 100%">
     <div class="container">
       <h2 class="display-4 text-center">The Team</h2><br>
     </div>
