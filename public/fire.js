@@ -5,8 +5,6 @@
       authDomain: "crypton-materialkit.firebaseapp.com",
       databaseURL: "https://crypton-materialkit.firebaseio.com",
       projectId: "crypton-materialkit",
-      storageBucket: "crypton-materialkit.appspot.com",
-      messagingSenderId: "51893553369"
     };
     firebase.initializeApp(config);
 
@@ -28,7 +26,7 @@
             $('#emailInput, #emailHelp').css("visibility", "hidden");
             $('#submitEmail').prop("disabled", true);
             $("#result").text(email + " was added successfully");
-            $("#thankYou").text("Thank you for joining Crypton's Beta waitlist.");
+            $("#thankYou").text("Thank you for joining Crypton's Beta waitlist. \n🤩");
             $("#result").css("color", "Lime");
             delayedAlert();
 
@@ -36,7 +34,7 @@
             //
         } else {
             $('#emailInput').css('border', '1px solid OrangeRed')
-            $("#result").text(email + " is not a valid email.");
+            $("#result").text(email + " is not a valid email, please try again. 🤔");
             $("#result").css("color", "OrangeRed");
         }
     };

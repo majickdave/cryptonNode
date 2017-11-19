@@ -46,8 +46,8 @@
      font-weight: 400;
     }
     button.btn:hover, button.btn:focus {
-      background: white;
-      color: purple; }
+      background: transparent;
+      color: white; }
 
     section {
       padding: 100px 0;
