@@ -25,7 +25,7 @@
                 id: id,
                 email: email
             });
-            $('#emailInput, #emailHelp', '#submitEmail').hide();
+            $('#emailInput, #emailHelp').css("visibility", "hidden");
             $('#submitEmail').prop("disabled", true);
             $("#result").text(email + " was added successfully");
             $("#thankYou").text("Thank you for joining Crypton's Beta waitlist.");
@@ -40,15 +40,6 @@
             $("#result").css("color", "OrangeRed");
         }
     };
-    vm.hideModal = () => {
-        $('#emailModal').modal('hide');
-        $('#emailModal').button('hide');
-        resetModal();
-
-    }
-    vm.openModal = () => {
-        $('#emailModal').modal('show');
-    }
 
     function resetModal() {
         $('#emailModal, #emailInput').val('');
@@ -57,7 +48,7 @@
         $("#result").css("color", "none");
         $('#emailInput').css("border", "none");
         $('#submitEmail').prop("disabled", false);
-        $('#emailInput, #emailHelp, #submitEmail').show();
+        $('#emailInput, #emailHelp').css("visibility", "visible");
 
     }
 
@@ -71,7 +62,8 @@
     function slowAlert() {
       alert('Thanks for your interest in Crypton.\nYou will recieve a confirmation email shortly.');
       $('#emailModal').modal('hide');
-      resetModal();
+      var modaltimeoutID;
+      modaltimeoutID = window.setTimeout(resetModal, 500);
 
     };
 
