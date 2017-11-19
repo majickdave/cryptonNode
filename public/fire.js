@@ -26,7 +26,7 @@
             $('#emailInput, #emailHelp').css("visibility", "hidden");
             $('#submitEmail').prop("disabled", true);
             $("#result").text(email + " was added successfully");
-            $("#thankYou").text("Thank you for joining Crypton's Beta waitlist. \n🤩");
+            $("#thankYou").text("Thank you for joining Crypton's Beta waitlist.");
             $("#result").css("color", "Lime");
             delayedAlert();
 
