@@ -16,6 +16,7 @@
 
     function submit(e) {
         e.preventDefault();
+
         var id = Date.now()
         var email = $('#emailModal #emailInput').val();
         var re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
@@ -24,50 +25,55 @@
                 id: id,
                 email: email
             });
-            $('#emailInput').css("visibility", "hidden");
-            $("#result").text(email + " Has been added successfully");
-            $("#result").css("color", "lightgreen");
+            $('#emailInput, #emailHelp', '#submitEmail').hide();
+            $('#submitEmail').prop("disabled", true);
+            $("#result").text(email + " was added successfully");
+            $("#thankYou").text("Thank you for joining Crypton's Beta waitlist.");
+            $("#result").css("color", "Lime");
             delayedAlert();
+
 
             //
         } else {
-            $('#emailInput').css('border', '1px solid red')
-            $("#result").text(email + " is not a valid email, please try again.");
-            $("#result").css("color", "red");
+            $('#emailInput').css('border', '2px solid OrangeRed')
+            $("#result").text(email + " is not a valid email.");
+            $("#result").css("color", "OrangeRed");
         }
     };
     vm.hideModal = () => {
         $('#emailModal').modal('hide');
         $('#emailModal').button('hide');
         resetModal();
+
     }
     vm.openModal = () => {
         $('#emailModal').modal('show');
     }
 
     function resetModal() {
-        $('#emailModal #emailInput').val('');
+        $('#emailModal, #emailInput').val('');
         $("#result").text('');
+        $("#thankYou").text('');
         $("#result").css("color", "none");
-        $('#emailInput').css("visibility", "visible");
         $('#emailInput').css("border", "none");
+        $('#submitEmail').prop("disabled", false);
+        $('#emailInput, #emailHelp, #submitEmail').show();
+
     }
 
     var timeoutID;
 
     function delayedAlert() {
       timeoutID = window.setTimeout(slowAlert, 800);
+
     }
 
     function slowAlert() {
-      alert('Thank you for your interest in Crypton.');
+      alert('Thanks for your interest in Crypton.\nYou will recieve a confirmation email shortly.');
       $('#emailModal').modal('hide');
       resetModal();
-    }
 
-    function clearAlert() {
-      window.clearTimeout(timeoutID);
-    }
+    };
 
 
 })()

@@ -36,6 +36,7 @@
 
 </head>
 
+
 <!-- Modal -->
 <div class="modal fade " id="emailModal" class='emailModal' tabindex="-1" role="dialog" aria-labelledby="emailModalLabel"
   aria-hidden="true" data-keyboard="false" data-backdrop="static">
@@ -48,20 +49,21 @@
         </button>
       </div>
       <div class="modal-body">
+        <div class="my-auto text-center" id='confirmedEmail'></div>
         <form id='emailForm'>
           <div class="form-group">
             <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email" autofocus>
             <small id='result'></small>
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
-          <button type="submit" id='submitEmail' class="btn btn-block btn-outline-light">Submit Email</button>
+          <button type="submit" id='submitEmail' class="btn btn-block btn-outline-light" onclick="hideModal()">Submit Email</button>
+          <div id='thankYou' class="text-center text-light" style="padding-top: 10px;"></div>
+
         </form>
       </div>
-      <!-- <div class="modal-footer">
+      <!-- <div class="modal-footer" >
 
-
-
-          </div> -->
+      </div> -->
     </div>
   </div>
 </div>
@@ -74,7 +76,7 @@
     <!-- Fixed navbar -->
     <nav role="navigation" class="navbar navbar-expand-lg fixed-top navbar-toggleable-md navbar-light bg-faded" id="navbar">
       <div class="container">
-      <a class="navbar-brand" href="#top">
+      <a class="navbar-brand" href="./index.html">
         <img src="./assets/brand/logo_transparent.png" width="30" height="30" class="d-inline-block align-top" alt="Crypton logo">
         CRYPTON
       </a>
@@ -85,38 +87,41 @@
 
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-        <ul class="nav justify-content-center">
+        <ul class="nav justify-content-end">
           <li class="nav-item active">
             <div class='container'>
-              <a rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/getcrypton" target="_blank"
+              <a rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/getcrypton"
                 rel="noopener noreferrer" class="btn">
                 <i class="fa fa-twitter"></i>
               </a>
             </div>
           </li>
           <li class="nav-item active">
-              <a rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/getcrypton" target="_blank"
+              <a rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/getcrypton"
                 rel="noopener noreferrer" class="btn">
                 <i class="fa fa-facebook-square"></i>
               </a>
           </li>
           <li class="nav-item active">
-              <a rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/getcrypton" target="_blank"
+              <a rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/getcrypton"
                 rel="noopener noreferrer" class="btn">
                 <i class="fa fa-instagram"></i>
               </a>
           </li>
           <li class="nav-item active">
-              <a rel="tooltip" title="Send us an Email" data-placement="bottom" href="mailto: team@cryptonapp.com?subject=Crypton Customer Request&body=Hi, I love Crypton, and would like to learn more about it." target="_blank"
+              <a rel="tooltip" title="Send us an Email" data-placement="bottom" href="mailto: team@cryptonapp.com?subject=Crypton Customer Request&body=Hi, I love Crypton, and would like to learn more about it."
                 rel="noopener noreferrer" class="btn">
                 <i class="fa fa-envelope"></i>
               </a>
           </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#emailModal">
-              Sign Up</button>
-          </li>
+
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <button type="button" class="btn btn-sm btn-block btn-outline-light" data-toggle="modal" data-target="#emailModal">
+                Sign Up</button>
+            </li>
          </ul>
+       </ul>
       </div>
     </div>
     </nav>
@@ -267,9 +272,10 @@
                 alt="blase biello" height="auto" width="150px" style="border: 0px">
                 <h3 class="font-weight-bold">Blase Biello</h3>
                 <p class="font-weight-light text-muted">co-Founder, CEO</p>
-                <a class="btn" href="https://www.linkedin.com/in/blasebiello/" rel="tooltip" title="Follow Blase on Linkedin" data-placement="bottom" target="_blank">
+                <a class="btn" href="https://www.linkedin.com/in/blasebiello/" rel="tooltip" title="Follow Blase on Linkedin" data-placement="bottom">
                   <i class="fa fa-linkedin"></i></a>
-                <a class="btn" href="https://medium.com/@blasebiello" rel="tooltip" title="Follow Blase on Medium" data-placement="bottom" target="_blank">
+                <a class="btn" href="https://medium.com/@blasebiello" rel="tooltip" title="Follow Blase on Medium" data-placement="bottom"
+                rel="noopener noreferrer">
                   <i class="fa fa-medium"></i></a>
             </div>
           </div>
@@ -280,7 +286,8 @@
             height="auto" width="150px" alt="david samuel" style="border: 0px">
             <h3 class="font-weight-bold">David Samuel</h3>
             <p class="font-weight-light text-muted">co-Founder, CTO</p>
-              <a class="btn" href="https://www.linkedin.com/in/datascienceinsight/" rel="tooltip" title="Follow David on Linkedin" data-placement="bottom" target="_blank">
+              <a class="btn" href="https://www.linkedin.com/in/datascienceinsight/" rel="tooltip" title="Follow David on Linkedin" data-placement="bottom"
+              rel="noopener noreferrer">
                 <i class="fa fa-linkedin"></i></a>
           </div>
         </div>
@@ -291,7 +298,8 @@
               height="auto" width="150px" alt="evan mair" style="border: 0px">
               <h3 class="font-weight-bold">Evan Mair</h3>
               <p class="font-weight-light text-muted">co-Founder, CFO</p>
-              <a class="btn" href="https://www.linkedin.com/in/evantmair/" rel="tooltip" title="Follow Evan on Linkedin" data-placement="bottom" target="_blank">
+              <a class="btn" href="https://www.linkedin.com/in/evantmair/" rel="tooltip" title="Follow Evan on Linkedin" data-placement="bottom"
+              rel="noopener noreferrer">
                 <i class="fa fa-linkedin"></i></a></span>
           </div>
         </div>
@@ -311,6 +319,7 @@
         </div>
       </footer>
 
+      <script type="text/javascript" src="//sharecdn.social9.com/v2/js/opensocialshare.js"></script><script type="text/javascript" src="//sharecdn.social9.com/v2/js/opensocialsharedefaulttheme.js"></script><link rel="stylesheet" type="text/css" href="//sharecdn.social9.com/v2/css/os-share-widget-style.css"/><script type="text/javascript">var shareWidget = new OpenSocialShare();shareWidget.init({isHorizontalLayout: 1,widgetIconSize: "32",widgetStyle: "square",theme: 'OpenSocialShareDefaultTheme',providers: { top: ["Email","Facebook","GooglePlus","LinkedIn","Twitter"]}});shareWidget.injectInterface(".oss-widget-interface");shareWidget.setWidgetTheme(".oss-widget-interface");</script>
 
 </body>
 
