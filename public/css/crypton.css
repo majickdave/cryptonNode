@@ -46,6 +46,7 @@
      font-weight: 400;
     }
     button.btn:hover, button.btn:focus {
+      background: white;
       color: purple; }
 
     section {

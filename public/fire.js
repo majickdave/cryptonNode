@@ -24,19 +24,21 @@
                 id: id,
                 email: email
             });
-            alert('Thank you for your interest, we will be contacting you shortly.')
-            $('#emailModal').modal('hide');
-            resetModal();
+            $('#emailInput').css("visibility", "hidden");
+            $("#result").text(email + " Has been added successfully");
+            $("#result").css("color", "lightgreen");
+            delayedAlert();
+
+            //
         } else {
-            $('emailInput').css('border', '1px solid red')
-            $("#result").text(email + " is not a valid email.");
+            $('#emailInput').css('border', '1px solid red')
+            $("#result").text(email + " is not a valid email, please try again.");
             $("#result").css("color", "red");
-
         }
-
     };
     vm.hideModal = () => {
         $('#emailModal').modal('hide');
+        $('#emailModal').button('hide');
         resetModal();
     }
     vm.openModal = () => {
@@ -44,9 +46,28 @@
     }
 
     function resetModal() {
-        $('#emailModal #emailInput').val('')
+        $('#emailModal #emailInput').val('');
         $("#result").text('');
         $("#result").css("color", "none");
+        $('#emailInput').css("visibility", "visible");
+        $('#emailInput').css("border", "none");
     }
+
+    var timeoutID;
+
+    function delayedAlert() {
+      timeoutID = window.setTimeout(slowAlert, 800);
+    }
+
+    function slowAlert() {
+      alert('Thank you for your interest in Crypton.');
+      $('#emailModal').modal('hide');
+      resetModal();
+    }
+
+    function clearAlert() {
+      window.clearTimeout(timeoutID);
+    }
+
 
 })()
