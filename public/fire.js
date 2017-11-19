@@ -58,7 +58,7 @@
     }
 
     function slowAlert() {
-      alert('Thanks for your interest in Crypton.\nYou will recieve a confirmation email shortly.');
+      alert('Thanks for your interest in Crypton.\nYou will receive a confirmation email shortly.');
       $('#emailModal').modal('hide');
       var modaltimeoutID;
       modaltimeoutID = window.setTimeout(resetModal, 500);
