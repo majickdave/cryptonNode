@@ -178,24 +178,21 @@
 
     .navbar {
       max-width: 100%;
-      background: transparent;
+
       transition: 500ms;
       min-height: 32px !important;
       padding-top: 40px;
-
-
-
-
     }
 
     .not-fixed {
+      background: transparent;
       position: absolute;
       padding-top: 50px;
       padding-bottom: 25px;
     }
 
     .fixed {
-      background: #54396b;
+      position: fixed;
       /*background: purple;*/
       /* background: white; */
       /*-webkit-box-shadow: 0 8px 6px -6px #999;
