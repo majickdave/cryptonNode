@@ -35,7 +35,7 @@
 
             //
         } else {
-            $('#emailInput').css('border', '2px solid OrangeRed')
+            $('#emailInput').css('border', '1px solid OrangeRed')
             $("#result").text(email + " is not a valid email.");
             $("#result").css("color", "OrangeRed");
         }
