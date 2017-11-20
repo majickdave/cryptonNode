@@ -39,8 +39,11 @@
         resetModal();
     }
     vm.openModal = () => {
-        $('#emailModal').modal('show');
+        $('#emailModal').on('shown.bs.modal', function () {
+          $('#emailInput').focus()
+        })
     }
+
 
     function resetModal() {
         $('#emailModal #emailInput').val('')
