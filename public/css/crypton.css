@@ -42,11 +42,16 @@
      cursor: pointer;
      width: 100%;
      padding: .8rem 2rem;
+
      font-size: 1.2rem;
-     font-weight: 400;
+     font-weight: 300;
     }
 
-
+    .navbar button.btn{
+     /*padding: .2rem 0.2rem;*/
+     font-size: 0.9rem;
+     font-weight: 300;
+    }
 
     section {
       padding: 100px 0;
