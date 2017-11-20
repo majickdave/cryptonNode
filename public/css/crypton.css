@@ -181,8 +181,19 @@
     }
 
     #portfolio {
-      
+
     }
+
+    #emailInput {
+      background: rgba(0,0,0, .1);
+      border: 1px solid white;
+    }
+
+    input[type="email"].form-control::-webkit-input-placeholder {
+      color: lightgrey;
+    }
+
+
 
     .navbar {
       max-width: 100%;

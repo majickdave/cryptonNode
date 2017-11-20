@@ -43,8 +43,8 @@
   <div class="modal-dialog round " role="document">
     <div class="modal-content bg-modal-pattern">
       <div class="modal-header">
-        <h5 class="modal-title text-light" id="emailModalLabel">Join Crypton</h5>
-        <button type="button" class="close text-light" data-dismiss='modal' aria-label="Close">
+        <h5 class="modal-title text-light font-weight-light" id="emailModalLabel">Join Crypton</h5>
+        <button type="button" class="close text-light" data-dismiss='modal' aria-label="Close" onmousedown="hideModal()">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -52,12 +52,12 @@
         <div class="my-auto text-center" id='confirmedEmail'></div>
         <form id='emailForm'>
           <div class="form-group">
-            <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
+            <input type="email" class="form-control text-light" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
             <small id='result'></small>
-            <small id="emailHelp" class="form-text text-light font-weight-light">We'll never share your email with anyone else.</small>
+            <small id="emailHelp" class="form-text text-muted text-light font-size-sm">We'll never share your email with anyone else.</small>
           </div>
           <button type="submit" id='submitEmail' class="btn btn-block btn-outline-light">Submit Email</button>
-          <div id='thankYou' class="text-center text-light" style="padding-top: 10px;"></div>
+          <div id='thankYou' class="text-center font-weight-light" style="padding-top: 10px;"></div>
 
         </form>
       </div>

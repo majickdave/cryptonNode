@@ -26,14 +26,15 @@
             $('#emailInput, #emailHelp').css("visibility", "hidden");
             $('#submitEmail').prop("disabled", true);
             $("#result").text(email + " was added successfully");
-            $("#thankYou").text("Thank you for joining Crypton's Beta waitlist.");
-            $("#result").css("color", "#7fff00");
+            // $("#thankYou").text("Thank you for joining Crypton's Beta waitlist.");
+            $("#result").css("color", "palegreen");
             delayedAlert();
 
 
             //
         } else {
-            $('#emailInput').css('border', '1px solid pink')
+            $('#emailInput').css('border', '2px solid #eee8aa')
+            $('#emailInput').css('background', 'rgba(0,0,0, 0.2)')
             $("#result").text(email + " is not a valid email, please try again. 🤔");
             $("#result").css("color", "#eee8aa");
         }
@@ -46,8 +47,8 @@
     }
 
     vm.hideModal = () => {
-        $('#emailModal').hide();
-
+        $('#emailModal').modal('hide');
+        resetModal();
     }
 
     function resetModal() {
@@ -55,9 +56,10 @@
         $("#result").text('');
         $("#thankYou").text('');
         $("#result").css("color", "none");
-        $('#emailInput').css("border", "none");
+        $('#emailInput').css("border", "1px solid white");
         $('#submitEmail').prop("disabled", false);
         $('#emailInput, #emailHelp').css("visibility", "visible");
+        $('#emailInput').css('background', 'rgba(0,0,0, .1)');
 
 
     }
