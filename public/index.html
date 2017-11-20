@@ -38,12 +38,12 @@
 
 
 <!-- Modal -->
-<div class="modal fade " id="emailModal" class='emailModal' tabindex="-1" role="dialog" aria-labelledby="emailModalLabel"
+<div class="modal fade" id="emailModal" class='emailModal' tabindex="-1" role="dialog" aria-labelledby="emailModalLabel"
   aria-hidden="true" data-keyboard="false" data-backdrop="static">
   <div class="modal-dialog round " role="document">
-    <div class="modal-content " style="background: #54396b">
+    <div class="modal-content bg-modal-pattern">
       <div class="modal-header">
-        <h5 class="modal-title text-light font-weight-bold" id="emailModalLabel">Join Crypton</h5>
+        <h5 class="modal-title text-light" id="emailModalLabel">Join Crypton</h5>
         <button type="button" class="close text-light" data-dismiss='modal' aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -52,9 +52,9 @@
         <div class="my-auto text-center" id='confirmedEmail'></div>
         <form id='emailForm'>
           <div class="form-group">
-            <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email" autofocus>
+            <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
             <small id='result'></small>
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <small id="emailHelp" class="form-text text-light font-weight-light">We'll never share your email with anyone else.</small>
           </div>
           <button type="submit" id='submitEmail' class="btn btn-block btn-outline-light">Submit Email</button>
           <div id='thankYou' class="text-center text-light" style="padding-top: 10px;"></div>
@@ -72,7 +72,7 @@
 <body id="top">
 
   <!-- Begin gradient pattern -->
-  <div class="bg-crypton-pattern">
+  <div class="bg-crypton-pattern" id="gradientTop">
     <!-- Fixed navbar -->
     <nav role="navigation" class="navbar navbar-expand-lg fixed-top navbar-toggleable-sm" id="navbar">
       <div class="container">
@@ -117,7 +117,8 @@
 
           <ul class="nav justify-content-end">
             <li class="nav-item">
-              <button type="button" class="btn btn-sm btn-block btn-outline-light" data-toggle="modal" data-target="#emailModal">
+              <button type="button" class="btn btn-sm btn-block btn-outline-light" data-toggle="modal" data-target="#emailModal"
+              onmousedown="openModal()">
                 Sign Up</button>
             </li>
          </ul>
@@ -137,11 +138,12 @@
               <div class="header-content mx-auto">
                   <h1 class="header-title">Investing in cryptocurrency should be simple.</h1>
                   <h4 >Crypton turns your spare change into Bitcoin, Litecoin, & Ethereum automatically with as little as $5.</h4><br>
-                  <button type="button" class="btn btn-lg btn-block btn-outline-light" data-toggle="modal" data-target="#emailModal" id="cryptonButton">
+                  <button type="button" class="btn btn-lg btn-block btn-outline-light" data-toggle="modal" data-target="#emailModal"
+                  onmousedown="openModal()">
                     Gain Early Access Now</button>
               </div>
             </div>
-            <div class="col-lg-5 my-auto" >
+            <div class="col-lg-5 my-auto hidden-sm" >
 
               <img src="assets/images/screenshot_white-iphone7.png" class="img-fluid" height="auto" alt="crypton iphone screenshot">
 
@@ -268,9 +270,9 @@
         <div class="row">
           <div class="col-lg-4">
             <div class="container text-center" style="margin-bottom: 50px">
-              <img class="img img-thumbnail rounded-circle bg-crypton-pattern" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAflAAAAJDFhNjY4NDNhLTdmYTctNGQ4Ni04NDEwLWU2MTk5Y2YxNmViYQ.jpg"
+              <img class="img img-thumbnail rounded-circle bg-modal-pattern" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAflAAAAJDFhNjY4NDNhLTdmYTctNGQ4Ni04NDEwLWU2MTk5Y2YxNmViYQ.jpg"
                 alt="blase biello" height="auto" width="150px" style="border: 0px">
-                <h3 class="font-weight-bold">Blase Biello</h3>
+                <h3>Blase Biello</h3>
                 <p class="font-weight-light text-muted">co-Founder, CEO</p>
                 <a class="btn" href="https://www.linkedin.com/in/blasebiello/" rel="tooltip" title="Follow Blase on Linkedin" data-placement="bottom">
                   <i class="fa fa-linkedin"></i></a>
@@ -282,9 +284,9 @@
 
           <div class="col-lg-4">
             <div class="container text-center" style="margin-bottom: 50px">
-            <img class="img img-thumbnail rounded-circle bg-crypton-pattern" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA2PAAAAJDJhYWQ5YTQ3LWRjMjUtNDE1NS04OGE1LTAzZDJmYjZlNTUxOA.jpg"
+            <img class="img img-thumbnail rounded-circle bg-modal-pattern" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA2PAAAAJDJhYWQ5YTQ3LWRjMjUtNDE1NS04OGE1LTAzZDJmYjZlNTUxOA.jpg"
             height="auto" width="150px" alt="david samuel" style="border: 0px">
-            <h3 class="font-weight-bold">David Samuel</h3>
+            <h3>David Samuel</h3>
             <p class="font-weight-light text-muted">co-Founder, CTO</p>
               <a class="btn" href="https://www.linkedin.com/in/datascienceinsight/" rel="tooltip" title="Follow David on Linkedin" data-placement="bottom"
               rel="noopener noreferrer">
@@ -294,9 +296,9 @@
 
           <div class="col-lg-4">
             <div class="container text-center" style="margin-bottom: 50px">
-            <img class="img img-thumbnail rounded-circle bg-crypton-pattern" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAxjAAAAJGUwZTM0ZmU0LWNiOWEtNDM1Ny1iODA3LTk0ZjFhMzI4M2M1Ng.jpg"
+            <img class="img img-thumbnail rounded-circle bg-modal-pattern" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAxjAAAAJGUwZTM0ZmU0LWNiOWEtNDM1Ny1iODA3LTk0ZjFhMzI4M2M1Ng.jpg"
               height="auto" width="150px" alt="evan mair" style="border: 0px">
-              <h3 class="font-weight-bold">Evan Mair</h3>
+              <h3>Evan Mair</h3>
               <p class="font-weight-light text-muted">co-Founder, CFO</p>
               <a class="btn" href="https://www.linkedin.com/in/evantmair/" rel="tooltip" title="Follow Evan on Linkedin" data-placement="bottom"
               rel="noopener noreferrer">
@@ -313,7 +315,7 @@
   </section>
 
 
-  <footer class="bg-crypton-pattern">
+  <footer class="bg-modal-pattern text-light font-weight-light">
         <div class="container">
           <p>&copy; <script>new Date().getFullYear()>document.write(+new Date().getFullYear());</script> - Crypton Holdings, LLC.</p>
         </div>
