@@ -45,9 +45,8 @@
      font-size: 1.2rem;
      font-weight: 400;
     }
-    button.btn:hover, button.btn:focus {
-      background: transparent;
-      color: white; }
+
+
 
     section {
       padding: 100px 0;
@@ -224,8 +223,7 @@
     color: white;
   }*/
   i.btn {
-    background: transparent;
-    color: lightgrey;
+    color: #ededed;
   }
   i {
 
@@ -237,8 +235,7 @@
 
 
   a.btn {
-    background: transparent;
-    color: lightgrey;
+    color: #ededed;
   }
 
   a {
