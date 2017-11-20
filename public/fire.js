@@ -44,7 +44,6 @@
         })
     }
 
-
     function resetModal() {
         $('#emailModal #emailInput').val('')
         $("#result").text('');
