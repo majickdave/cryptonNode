@@ -18,8 +18,8 @@
       font-weight: 300;
       letter-spacing: 1px; }
 
-      h1 {
-        letter-spacing: 5px;
+      .header-subtitle h1 {
+        letter-spacing: 3px;
       }
 
       h4, h3 {
