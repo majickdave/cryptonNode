@@ -2,7 +2,8 @@
   html,
   body {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    }
 
   body {
     font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif'; }
@@ -14,8 +15,16 @@
     h6 {
       -webkit-font-smoothing: antialiased;
       font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
-      font-weight: 200;
+      font-weight: 300;
       letter-spacing: 1px; }
+
+      h1 {
+        letter-spacing: 5px;
+      }
+
+      h4, h3 {
+        letter-spacing: 1px;
+      }
 
     .title h2 {
       font-size: 1.3em;
@@ -38,19 +47,46 @@
       font-size: 20px;
     }
 
+    .navbar .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
     button.btn{
      cursor: pointer;
-     width: 100%;
-     padding: .8rem 2rem;
+   }
 
-     font-size: 1.2rem;
+    header button.btn{
+      width: 100%;
+     padding: 1rem 1.8rem;
+     font-size: 1.3rem;
      font-weight: 300;
     }
 
+    .crypton-1 {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.crypton-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.crypton-3 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
     .navbar button.btn{
-     /*padding: .2rem 0.2rem;*/
-     font-size: 0.9rem;
+     padding: .4rem 1rem;
+     font-size: 1rem;
      font-weight: 300;
+    }
+
+
+    .modal button.btn{
+      padding: 1rem 1rem;
+      font-size: 1.5rem;
+      font-weight: 300;
     }
 
     section {
@@ -63,9 +99,7 @@
 
     header.masthead {
       position: relative;
-      width: 100%;
-      padding-top: 50px;
-      padding-bottom: 100px;
+      width: 100vw;
       color: white;
     }
 
@@ -76,18 +110,9 @@
     }
 
     header.masthead .header-content h1 {
-      font-size: 30px;
+      font-size: 2rem;
     }
 
-    header.masthead .device-container {
-      max-width: 325px;
-      margin-right: auto;
-      margin-left: auto;
-    }
-
-    header.masthead .device-container .screen img {
-      border-radius: 3px;
-    }
 
     @media (min-width: 992px) {
       header.masthead {
@@ -193,46 +218,34 @@
       color: lightgrey;
     }
 
-
-
     .navbar {
       max-width: 100%;
 
       transition: 500ms;
       min-height: 32px !important;
-      padding-top: 40px;
+      /*padding-top: 40px;*/
     }
 
     .not-fixed {
       background: transparent;
       position: absolute;
-      padding-top: 50px;
-      padding-bottom: 25px;
+      padding-top: 5vh;
+      padding-bottom: 5vh;
     }
 
     .fixed {
       position: fixed;
-      /*background: purple;*/
-      /* background: white; */
-      /*-webkit-box-shadow: 0 8px 6px -6px #999;
-      -moz-box-shadow: 0 8px 6px -6px #999;
-      box-shadow: 0 8px 6px -6px #999;*/
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
       padding-top: 12px;
       padding-bottom: 12px;
     }
 
-  /* change navbar-brand color */
-  .navbar a.navbar-brand {
-    color: #efefef;
-  }
-  /* change navbar-brand color on hover */
-  .navbar a.navbar-brand:hover {
+
+  .navbar .navbar-brand {
     color: white;
+    filter: brightness(.9);
   }
-  .navbar img.navbar-brand {
-    filter: brightness(0.5)
-  }
-  .navbar img.navbar-brand:hover {
+  .navbar .navbar-brand:hover {
     filter: brightness(1);
   }
 
@@ -272,10 +285,19 @@
   }
 
   .navbar .btn {
-    width: 100%;
     padding: .5rem 1.2rem;
     font-size: 1.2rem;
     font-weight: 300;
+  }
+
+  .footer-icons .btn {
+    padding: 1em .8em;
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+
+  #portfolio .btn {
+    font-size: 2rem;
   }
 
   footer {

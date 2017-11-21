@@ -21,11 +21,11 @@
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700" />
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
     crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
   <!-- Custom styles for this template -->
   <link href="css/sticky-footer-navbar.css" rel="stylesheet">
   <link href="css/crypton.css" rel="stylesheet">
@@ -54,9 +54,9 @@
           <div class="form-group">
             <input type="email" class="form-control text-light" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
             <small id='result'></small>
-            <small id="emailHelp" class="form-text text-muted text-light font-size-sm">We'll never share your email with anyone else.</small>
+            <p id="emailHelp" class="form-text text-muted text-light font-weight-light">We'll never share your email with anyone else.</p>
           </div>
-          <button type="submit" id='submitEmail' class="btn btn-block btn-outline-light">Submit Email</button>
+          <button type="submit" id='submitEmail' class="btn btn-block btn-outline-light crypton-1">Submit Email</button>
           <div id='thankYou' class="text-center font-weight-light" style="padding-top: 10px;"></div>
 
         </form>
@@ -72,93 +72,68 @@
 <body id="top">
 
   <!-- Begin gradient pattern -->
-  <div class="bg-crypton-pattern" id="gradientTop">
+  <section class="bg-crypton-pattern" id="top">
+
+
     <!-- Fixed navbar -->
-    <nav role="navigation" class="navbar navbar-expand-lg fixed-top navbar-toggleable-sm" id="navbar">
+    <nav role="navigation" class="navbar fixed-top not-fixed navbar-toggleable-sm" id="navbar" style>
       <div class="container">
       <a class="navbar-brand" href="./index.html">
         <img src="./assets/brand/logo_transparent.png" width="30" height="30" class="d-inline-block align-top" alt="Crypton logo">
         Crypton
       </a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-        aria-expanded="true" aria-label="Toggle navigation" style="border: none">
+      <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+        aria-expanded="true" aria-label="Toggle navigation">
         <i class="fa fa-bars btn" aria-hidden="true"></i>
-      </button>
-
-
-      <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-        <ul class="nav justify-content-end">
-          <li class="nav-item active">
-            <div class='container'>
-              <a rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/getcrypton"
-                rel="noopener noreferrer" class="btn">
-                <i class="fa fa-twitter"></i>
-              </a>
-            </div>
-          </li>
-          <li class="nav-item active">
-              <a rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/getcrypton"
-                rel="noopener noreferrer" class="btn">
-                <i class="fa fa-facebook-square"></i>
-              </a>
-          </li>
-          <li class="nav-item active">
-              <a rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/getcrypton"
-                rel="noopener noreferrer" class="btn">
-                <i class="fa fa-instagram"></i>
-              </a>
-          </li>
-          <li class="nav-item active">
-              <a rel="tooltip" title="Send us an Email" data-placement="bottom" href="mailto: team@cryptonapp.com?subject=Crypton Customer Request&body=Hi, I love Crypton, and would like to learn more about it."
-                rel="noopener noreferrer" class="btn">
-                <i class="fa fa-envelope"></i>
-              </a>
-          </li>
-
+      </button> -->
+      <div class="justify-content-end">
           <ul class="nav justify-content-end">
             <li class="nav-item">
-              <button type="button" class="btn btn-sm btn-block btn-outline-light" data-toggle="modal" data-target="#emailModal"
+              <button type="button" class="btn btn-lg btn-outline-light crypton-1" data-toggle="modal" data-target="#emailModal"
               onmousedown="openModal()">
                 Sign Up</button>
             </li>
          </ul>
-       </ul>
+
       </div>
     </div>
     </nav>
 
     <!-- Begin page content -->
-    <main role="main" id="content">
+    <div class="wrapper">
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <header class="masthead ">
-        <div class="container h-100 " style="position: relative; top: -10%">
+        <div class="container h-100">
           <div class="row h-100">
-            <div class="col-lg-7 my-auto">
+            <div class="col-lg-7 my-auto" >
               <div class="header-content mx-auto">
-                  <h1 class="header-title">Investing in cryptocurrency should be simple.</h1>
-                  <h4 >Crypton turns your spare change into Bitcoin, Litecoin, & Ethereum automatically with as little as $5.</h4><br>
-                  <button type="button" class="btn btn-lg btn-block btn-outline-light" data-toggle="modal" data-target="#emailModal"
-                  onmousedown="openModal()">
+                  <h1 class="header-title" style="padding-bottom: 2vh;">Investing in cryptocurrency should be simple.</h1>
+                  <h4 class="header-subtitle" style="padding-bottom: 1vh;">Crypton turns your spare change into Bitcoin, Litecoin, & Ethereum automatically with as little as $5.</h4>
+                  <button type="button" class="btn btn-sm btn-outline-light crypton-1" data-toggle="modal" data-target="#emailModal"
+                  onmousedown="openModal()" >
                     Gain Early Access Now</button>
+
               </div>
             </div>
-            <div class="col-lg-5 my-auto hidden-sm" >
+            <div class="col-lg-5 my-auto" style="position: relative; top: -10%">
 
-              <img src="assets/images/screenshot_white-iphone7.png" class="img-fluid" height="auto" alt="crypton iphone screenshot">
+              <img src="assets/images/screenshot_white-iphone7.png" class="img-fluid" height="auto" alt="crypton iphone screenshot" >
 
             </div>
           </div>
         </div>
       </header>
       <!-- End gradient pattern  -->
-  </div>
+  </section>
+    </div>
+
 
   <!-- features section  -->
   <section class="features" id="features" >
     <div class="container my-auto">
       <div class="section-heading text-center">
-        <h4 class="display-4">How Crypton Works</h4>
+        <h1 class="header-title">How Crypton Works</h1>
 
 
       <!-- Start how it works -->
@@ -194,7 +169,7 @@
 
     <div class="container" >
       <div class="container section-heading text-center">
-        <h4 class="display-4">Ways to Invest</h4>
+        <h1 class="header-title">Ways to Invest</h1>
       </div>
       <div class="row inline block h-100">
 
@@ -217,19 +192,19 @@
             <div class="row h-100">
               <div class="col-lg-6">
                 <div class="feature-item">
-                  <div class="btn btn-outline-danger disabled" style="background: transparent; border: 0px" onmousedown="$('#spare').animateCss('slideOutUp');">
+                  <div style="opacity: 0.7" onmousedown="$('#spare').animateCss('slideOutUp');">
                   <i class="fa fa-arrow-up text-primary" id="spare"></i>
                 </div>
-                  <h3>SPARE CHANGE ROUND-UPS</h3>
+                  <h3>Spare Change Round-Ups</h3>
                   <p class="text-muted">Round your daily purchases to the nearest dollar and acquire Bitcoin, Litecoin, & Ethereum.</p>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="feature-item">
-                  <div class="btn btn-outline-danger disabled" style="background: transparent; border: 0px" onmousedown="$('#recur').animateCss('rotateOut');">
+                  <div style="opacity: 0.7" onmousedown="$('#recur').animateCss('rotateOut');">
                   <i class="fa fa-repeat text-primary" id="recur"></i>
                 </div>
-                  <h3>RECURRING INVESTMENTS</h3>
+                  <h3>Recurring Investments</h3>
                   <p class="text-muted">Automatically purchase a pre-set dollar amount of digital currency on a pre-set basis.</p>
                 </div>
               </div>
@@ -237,19 +212,21 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="feature-item">
-                  <div class="btn btn-outline-danger disabled" style="background: transparent; border: 0px" onmousedown="$('#multiply').animateCss('pulse');">
+                  <div style="opacity: 0.7" onmousedown="$('#multiply').animateCss('pulse');">
                   <i class="fa fa-times-circle text-primary" id="multiply"></i>
                 </div>
-                  <h3>CUSTOM MULTIPLIERS</h3>
+                <div class="text-justify-center">
+                  <h3 >Custom Multipliers</h3>
                   <p class="text-muted">Boost your Spare Change Round-Ups by the multiple of your choice.</p>
+                </div>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="feature-item">
-                  <div class="btn btn-outline-danger disabled" style="background: transparent; border: 0px" onmousedown="$('#ontap').animateCss('flash');">
+                  <div style="opacity: 0.7" onmousedown="$('#ontap').animateCss('flash');">
                   <i class="fa fa-btc text-primary" id="ontap"></i>
                 </div>
-                  <h3>CRYPTO ON</h3><h3>TAP</h3>
+                  <h3 class="text-justify-center">Crypto On Tap</h3>
                   <p class="text-muted">Buy or Sell any amount of digital currency at any time.</p>
                 </div>
               </div>
@@ -263,14 +240,14 @@
   </section>
 
   <section class="bg-dark text-light" id="portfolio">
-    <div class="container">
-      <h2 class="display-4 text-center">The Team</h2><br>
+    <div class="container" style="padding-bottom: 100px;">
+      <h1 class="header-title text-center">The Team</h1>
     </div>
       <div class="container">
         <div class="row ">
           <div class="col-lg-4">
             <div class="container text-center" style="margin-bottom: 50px">
-              <img class="img img-thumbnail rounded-circle bg-modal-pattern" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAflAAAAJDFhNjY4NDNhLTdmYTctNGQ4Ni04NDEwLWU2MTk5Y2YxNmViYQ.jpg"
+              <img class="img img-thumbnail rounded-circle bg-modal-pattern crypton-3" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAflAAAAJDFhNjY4NDNhLTdmYTctNGQ4Ni04NDEwLWU2MTk5Y2YxNmViYQ.jpg"
                 alt="blase biello" height="auto" width="150px" style="border: 0px">
                 <h3>Blase Biello</h3>
                 <p class="font-weight-light text-muted">co-Founder, CEO</p>
@@ -284,7 +261,7 @@
 
           <div class="col-lg-4">
             <div class="container text-center" style="margin-bottom: 50px">
-            <img class="img img-thumbnail rounded-circle bg-modal-pattern" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA2PAAAAJDJhYWQ5YTQ3LWRjMjUtNDE1NS04OGE1LTAzZDJmYjZlNTUxOA.jpg"
+            <img class="img img-thumbnail rounded-circle bg-modal-pattern crypton-3" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA2PAAAAJDJhYWQ5YTQ3LWRjMjUtNDE1NS04OGE1LTAzZDJmYjZlNTUxOA.jpg"
             height="auto" width="150px" alt="david samuel" style="border: 0px">
             <h3>David Samuel</h3>
             <p class="font-weight-light text-muted">co-Founder, CTO</p>
@@ -296,7 +273,7 @@
 
           <div class="col-lg-4">
             <div class="container text-center" style="margin-bottom: 50px">
-            <img class="img img-thumbnail rounded-circle bg-modal-pattern" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAxjAAAAJGUwZTM0ZmU0LWNiOWEtNDM1Ny1iODA3LTk0ZjFhMzI4M2M1Ng.jpg"
+            <img class="img img-thumbnail rounded-circle bg-modal-pattern crypton-3" src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAxjAAAAJGUwZTM0ZmU0LWNiOWEtNDM1Ny1iODA3LTk0ZjFhMzI4M2M1Ng.jpg"
               height="auto" width="150px" alt="evan mair" style="border: 0px">
               <h3>Evan Mair</h3>
               <p class="font-weight-light text-muted">co-Founder, CFO</p>
@@ -314,14 +291,38 @@
 
   </section>
 
-
-  <footer class="bg-modal-pattern text-light font-weight-light">
-        <div class="container">
+  <footer class="bg-modal-pattern">
+        <div class="container footer-icons " style="padding: 20px">
           <p>&copy; <script>new Date().getFullYear()>document.write(+new Date().getFullYear());</script> - Crypton Holdings, LLC.</p>
+          <ul class="list-inline ">
+            <li class="list-inline-item">
+              <a rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/getcrypton"
+                rel="noopener noreferrer" class="btn">
+                <i class="icon-social-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/getcrypton"
+                rel="noopener noreferrer" class="btn">
+                <i class="icon-social-facebook"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/getcrypton"
+                rel="noopener noreferrer" class="btn">
+                <i class="icon-social-instagram"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a rel="tooltip" title="Send us an Email" data-placement="bottom" href="mailto: team@cryptonapp.com?subject=Crypton Customer Request&body=Hi, I love Crypton, and would like to learn more about it."
+                rel="noopener noreferrer" class="btn">
+                <i class="icon-envelope"></i>
+              </a>
+            </li>
+          </ul>
+
         </div>
       </footer>
-
-      <script type="text/javascript" src="//sharecdn.social9.com/v2/js/opensocialshare.js"></script><script type="text/javascript" src="//sharecdn.social9.com/v2/js/opensocialsharedefaulttheme.js"></script><link rel="stylesheet" type="text/css" href="//sharecdn.social9.com/v2/css/os-share-widget-style.css"/><script type="text/javascript">var shareWidget = new OpenSocialShare();shareWidget.init({isHorizontalLayout: 1,widgetIconSize: "32",widgetStyle: "square",theme: 'OpenSocialShareDefaultTheme',providers: { top: ["Email","Facebook","GooglePlus","LinkedIn","Twitter"]}});shareWidget.injectInterface(".oss-widget-interface");shareWidget.setWidgetTheme(".oss-widget-interface");</script>
 
 </body>
 
@@ -351,16 +352,16 @@
   </script>
   <script>
     $(window).scroll(function () {
-      if ($(window).scrollTop() > 100) {
+      if ($(window).scrollTop() > 0) {
         $('.navbar').addClass('fixed');
         $('.navbar').addClass('bg-dark');
       }
-      else if ($(window).scrollTop() < 0) {
-        $('.navbar').addClass('not-fixed')
+      else if ($(window).scrollTop() <= 0) {
+        $('.navbar').addClass('not-fixed');
+        $('.navbar').removeClass('fixed');
+        $('.navbar').removeClass('bg-dark');
       }
-      else if ($(window).scrollTop() > 0) {
-        $('.navbar').removeClass('not-fixed')
-      }
+
       else {
         $('.navbar').removeClass('fixed');
         $('.navbar').removeClass('bg-dark');
