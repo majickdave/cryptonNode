@@ -25,7 +25,7 @@
             });
             $('#emailInput, #emailHelp').css("visibility", "hidden");
             $('#submitEmail').prop("disabled", true);
-            $("#result").text(email + " was added successfully");
+            $("#result").text(email + " was added successfully!");
             // $("#thankYou").text("Thank you for joining Crypton's Beta waitlist.");
             $("#result").css("color", "palegreen");
             delayedAlert();
