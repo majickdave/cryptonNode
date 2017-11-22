@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
     crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
   <!-- Custom styles for this template -->
   <link href="css/sticky-footer-navbar.css" rel="stylesheet">
@@ -40,7 +40,7 @@
 <!-- Modal -->
 <div class="modal fade" id="emailModal" class='emailModal' tabindex="-1" role="dialog" aria-labelledby="emailModalLabel"
   aria-hidden="true" data-keyboard="false" data-backdrop="static">
-  <div class="modal-dialog round " role="document">
+  <div class="modal-dialog round" role="document">
     <div class="modal-content bg-modal-pattern">
       <div class="modal-header">
         <h5 class="modal-title text-light font-weight-light" id="emailModalLabel">Join Crypton</h5>
@@ -76,11 +76,11 @@
 
 
     <!-- Fixed navbar -->
-    <nav role="navigation" class="navbar fixed-top not-fixed" id="navbar" style>
+    <nav role="navigation" class="navbar navbar-expand-lg fixed-top not-fixed" id="navbar" style>
       <div class="container">
       <a class="navbar-brand" href="./index.html">
-        <img src="./assets/brand/logo_transparent.png" width="30" height="30" class="d-inline-block align-top" alt="Crypton logo">
-        Crypton
+        <img src="./assets/brand/logo_transparent.png" width="48" height="48" class="rounded" alt="Crypton logo" style="border: 1px solid white;">
+          CRYPTON
       </a>
       <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
         aria-expanded="true" aria-label="Toggle navigation">
@@ -89,7 +89,7 @@
       <div class="justify-content-end">
           <ul class="nav justify-content-end">
             <li class="nav-item">
-              <button type="button" class="btn btn-lg btn-outline-light crypton-1" data-toggle="modal" data-target="#emailModal"
+              <button type="button" class="btn btn-lg btn-outline-light" data-toggle="modal" data-target="#emailModal"
               onmousedown="openModal()">
                 Sign Up</button>
             </li>
@@ -293,7 +293,7 @@
 
   <footer class="bg-modal-pattern">
         <div class="container footer-icons " style="padding: 20px">
-          <p>&copy; <script>new Date().getFullYear()>document.write(+new Date().getFullYear());</script> - Crypton Holdings, LLC.</p>
+          <small class="font-weight-light">&copy; <script>new Date().getFullYear()>document.write(+new Date().getFullYear());</script> - Crypton Holdings, LLC.</small>
           <ul class="list-inline ">
             <li class="list-inline-item">
               <a rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/getcrypton"
@@ -353,18 +353,12 @@
   <script>
     $(window).scroll(function () {
       if ($(window).scrollTop() > 0) {
+        $('.navbar').removeClass('not-fixed');
         $('.navbar').addClass('fixed');
-        $('.navbar').addClass('bg-dark');
       }
       else if ($(window).scrollTop() <= 0) {
         $('.navbar').addClass('not-fixed');
         $('.navbar').removeClass('fixed');
-        $('.navbar').removeClass('bg-dark');
-      }
-
-      else {
-        $('.navbar').removeClass('fixed');
-        $('.navbar').removeClass('bg-dark');
       }
     });
 
